@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>THE ART of DESIGN WORKS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!--fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+</head>
+
+<body>
+    <!-- 第1個區塊 - 首頁 -->
+    <div id="home">
+        <div class="container">
+            <div class="col">
+                <h1 data-animate data-animation-classes="animated bounce">歡迎!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- 第1個區塊 -->
+    <!--導覽列-->
+    <div id="fixednavbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    </button>
+                <a class="navbar-brand" href="#home"><img src="image/logo.png" alt="logo" height="30px"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a id="skill-click" class="nav-link" href="#skill">專業<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a id="about-click" class="nav-link" href="#about">經歷<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a id="workcollection-click" class="nav-link" href="#workcollection">作品<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a id="contact-click" class="nav-link" href="#contact"><i class="far fa-address-card fa-lg fa-fw"></i> 連絡方式<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--導覽列-->
+    <!-- 第2個區塊 - 專業 -->
+    <div id="skill">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 data-animate data-animation-classes="animated bounce">我的專業</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第2個區塊 -->
+    <!-- 第3個區塊 - 經歷 -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 data-animate data-animation-classes="animated bounce">我的經歷</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第3個區塊 -->
+    <!-- 第4--作品-->
+    <div id="workcollection">
+        <div class="container">
+            <h2 data-animate data-animation-classes="animated bounce">我的作品</h2>
+        </div>
+    </div>
+    <!-- 第4,5個區塊 -->
+    <!-- 頁腳(footer) -->
+    <footer>
+        <div id="contact">
+            <div class="container">
+                <p>版權所有 &copy; 我的公司 2018</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 頁腳(footer) -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+    </script>
+
+    <!-- 動態效果程式 -->
+    <script src="js/animate.js"></script>
+    <script>
+        var animate = new Animate({
+            target: '[data-animate]',
+            animatedClass: 'js-animated',
+            offset: [0.5, 0.5],
+            delay: 0,
+            remove: true,
+            scrolled: false,
+            reverse: false,
+            onLoad: true,
+            onScroll: true,
+            onResize: false,
+            disableFilter: false,
+            callbackOnInit: function() {},
+            callbackOnAnimate: function(el) {},
+        });
+        animate.init();
+    </script>
+</body>
+
+</html>

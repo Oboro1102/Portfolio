@@ -1,0 +1,76 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+#home {
+    display: block;
+    height: 100%;
+    padding-top: 20rem;
+    position: relative;
+    background: url(../image/minbg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#fixednavbar {
+    background-color: #222222;
+    display: block;
+}
+
+#skill {
+    display: block;
+    position: relative;
+    padding: 15rem 0;
+    color: white;
+    background-color: #222222;
+}
+
+#about {
+    display: block;
+    height: 100%;
+    position: relative;
+    padding: 20rem 0;
+    color: white;
+    background: url(../image/minbg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workcollection {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 20rem 0;
+    color: white;
+    background: url(../image/gamp.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#contact {
+    height: 10rem;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 0.75rem;
+    display: block;
+    text-align: center;
+}
