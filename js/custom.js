@@ -9,7 +9,7 @@ $(document).ready(function () {
         }
     });
 });
-$('.navbar-brand').click(function (e) {
+$('#home-click').click(function (e) {
     e.preventDefault();
     $('html,body').animate({
         scrollTop: $('#home').offset().top
@@ -19,6 +19,12 @@ $('#about-click').click(function (e) {
     e.preventDefault();
     $('html,body').animate({
         scrollTop: $('#about').offset().top
+    }, 700);
+});
+$('#experience-click').click(function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $('#experience').offset().top
     }, 700);
 });
 $('#skill-click').click(function (e) {
