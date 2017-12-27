@@ -1,11 +1,13 @@
 $(document).ready(function () {
     $(window).bind('scroll', function () {
-        var barH = $("#fixednavbar").height();
-        var navHeight = $(window).height() - barH;
-        if ($(window).scrollTop() > navHeight) {
+        var winH = $(window).height();
+        // Fixed Navbar on Home Page
+        if ($(window).scrollTop() > winH) {
             $('#fixednavbar').addClass('fixed-top');
         } else {
-            $('#fixednavbar').removeClass('fixed-top');
+            if ($('#home').length) {
+                $('#fixednavbar').removeClass('fixed-top');
+            }
         }
     });
 });
