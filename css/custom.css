@@ -40,6 +40,10 @@ img {
     display: block;
 }
 
+#navbarSupportedContent {
+    text-align: center;
+}
+
 #about {
     display: block;
     position: relative;
