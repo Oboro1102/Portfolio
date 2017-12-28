@@ -6,21 +6,123 @@ body {
     width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
     font-family: 'Noto Sans TC', sans-serif;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h6 {
+    font-size: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    margin: 1em 0;
+    line-height: 175%;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+@main-font: 'Helvetica Neue', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+@title-font: 'Helvetica Neue', 'PingFang TC', 'Heiti TC', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
 
+html, body {
+  font-size: 16px;
+  font-family: @main-font;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: @title-font;
+}
+
+.article-content {
+    color: #666;
+    line-height: 1.75;
+    font-size: 18px;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 1em;
+        margin-bottom: .6em;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+    
+    p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    hr {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    pre {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
 #home {
     display: block;
     height: 100%;
