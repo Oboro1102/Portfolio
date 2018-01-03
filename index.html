@@ -39,12 +39,12 @@
     <!--導覽列-->
     <div id="fixednavbar" class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
+           <a id="home-click" class="navbar-brand mx-auto" href="#home"><img src="image/logo.png" alt="logo" width="100px"></a>
             <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
     </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active mr-3"><a id="home-click" class="nav-link" href="#home"><img src="image/logo.png" alt="logo" width="100px"></a></li>
                     <li class="nav-item active mr-3"><a id="skill-click" class="nav-link" href="#skill">專業<span class="sr-only">(current)</span></a></li>
                     <li class="nav-item active mr-3"><a id="experience-click" class="nav-link" href="#experience">經歷<span class="sr-only">(current)</span></a></li>
                     <li class="nav-item active mr-3"><a id="workcollection-click" class="nav-link" href="#workcollection">作品<span class="sr-only">(current)</span></a></li>
@@ -142,6 +142,7 @@
             }
 
         }())
+
     </script>
 
     <!-- 動態效果程式 -->
@@ -163,6 +164,7 @@
             callbackOnAnimate: function(el) {},
         });
         animate.init();
+
     </script>
 
     <!-- 動態圓圈 -->
@@ -175,6 +177,7 @@
                 percent: 75
             });
         });
+
     </script>
 </body>
 
