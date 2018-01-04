@@ -69,13 +69,23 @@ img {
     background-size: cover;
 }
 
-#fixednavbar {
-    background-color: #222222;
-    display: block;
+#home-click {
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
+#fixednavbar {
+    border-radius: .3rem;
+    padding: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    justify-content: flex-end;
+ }
+
 #navbarSupportedContent {
-    text-align: center;
+    background: white;
+    border-radius: .3rem;
+    padding: 0 .5rem;
 }
 
 #about {
