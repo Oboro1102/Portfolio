@@ -1,18 +1,4 @@
-$(document).ready(function () {
-    $(window).bind('scroll', function () {
-        var barH = $("#fixednavbar").height();
-        var winH = $(window).height();
-        var homeH = $("#home").offset().top;
-        // Fixed Navbar on Home Page
-        if ($(window).scrollTop() > winH) {
-            $('#fixednavbar').addClass('fixed-top');
-        } else {
-            if ($('#home').length) {
-                $('#fixednavbar').removeClass('fixed-top');
-            }
-        }
-    });
-});
+/*連結轉跳*/
 
 $('#home-click').click(function (e) {
     e.preventDefault();
