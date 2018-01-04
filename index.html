@@ -24,36 +24,40 @@
 </head>
 
 <body>
+    <!--導覽列-->
+    <div id="customenavbar" class="fixed-top">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <a id="home-click" href="#home"><img src="image/logo.png" alt="logo" width="150"></a>
+                <nav id="fixednavbar" class="navbar navbar-expand-lg bg-light navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    </button>
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active mr-3"><a id="about-click" class="nav-link" href="#about"><i class="fas fa-user-circle fa-lg fa-fw"></i> 關於我<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active mr-3"><a id="skill-click" class="nav-link" href="#skill"><i class="fas fa-paint-brush fa-lg fa-fw"></i> 專業<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active mr-3"><a id="experience-click" class="nav-link" href="#experience"><i class="fas fa-building fa-lg fa-fw"></i> 經歷<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active mr-3"><a id="workcollection-click" class="nav-link" href="#workcollection"><i class="fas fa-suitcase fa-lg fa-fw"></i> 作品<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active mr-3"><a id="contact-click" class="nav-link" href="#contact"><i class="fas fa-phone-square fa-lg fa-fw"></i> 連絡我<span class="sr-only">(current)</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--導覽列-->
     <!-- 第1個區塊 - 首頁 -->
     <div id="home">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h1 data-animate data-animation-classes="animated bounce">我們是宇宙裡最微小的星晨，但，是我們人生最大的主宰！</h1>
-                    <a id="about-click" href="#about" class="btn btn-dark btn-lg" role="button" style="margin-top: 3rem">關於我</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- 第1個區塊 -->
-    <!--導覽列-->
-    <div id="fixednavbar" class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-           <a id="home-click" class="navbar-brand mx-auto" href="#home"><img src="image/logo.png" alt="logo" width="100px"></a>
-            <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active mr-3"><a id="skill-click" class="nav-link" href="#skill">專業<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item active mr-3"><a id="experience-click" class="nav-link" href="#experience">經歷<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item active mr-3"><a id="workcollection-click" class="nav-link" href="#workcollection">作品<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item active mr-3"><a id="contact-click" class="nav-link" href="#contact"><i class="far fa-address-card fa-lg fa-fw"></i> 連絡方式<span class="sr-only">(current)</span></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!--導覽列-->
     <!-- 第2個區塊 - 關於我 -->
     <div id="about">
         <div class="container">
@@ -142,7 +146,6 @@
             }
 
         }())
-
     </script>
 
     <!-- 動態效果程式 -->
@@ -164,7 +167,6 @@
             callbackOnAnimate: function(el) {},
         });
         animate.init();
-
     </script>
 
     <!-- 動態圓圈 -->
@@ -177,7 +179,6 @@
                 percent: 75
             });
         });
-
     </script>
 </body>
 
