@@ -39,4 +39,9 @@ $('#contact-click').click(function (e) {
 
 /*時間軸*/
 
-$('#worktimeline').verticalTimeline();
+$('#worktimeline').verticalTimeline({
+    startLeft: true,
+    alternate: true,
+    animate: false,
+    arrows: false
+});
