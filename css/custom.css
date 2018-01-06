@@ -12,7 +12,7 @@ body {
 }
 
 body{
-    background: url(../image/Dark-Knight.jpg) no-repeat center center fixed;
+    background: url(../image/minbg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -66,7 +66,20 @@ img {
     height: auto;
 }
 
+/* 時間軸樣式 */
+
+#worktimeline hr {
+    margin: 1rem 0;
+}
+
+.inverted li {
+    text-align: left;
+}
+
+/* 網頁樣式 */
+
 #home {
+    width: auto;
     height: 100%;
     color: white;
     padding: 25rem 0;
@@ -94,6 +107,8 @@ img {
 }
 
 #about {
+    width: auto;
+    height: auto;
     padding: 3rem 0;
     text-align: center;
     color: white;
@@ -101,32 +116,39 @@ img {
 }
 
 #skill {
-    padding: 20rem 0;
+    width: auto;
+    height: auto;
+    padding: 5rem 0;
     color: white;
-    background: url(../image/minbg.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: black;
+}
+
+#skill p {
+    margin-bottom: 0;
 }
 
 #experience {
-    padding: 20rem 0;
+    width: auto;
+    height: auto;
+    padding: 5rem 0;
     color: white;
     background-color: #222222;
 }
 
 #workcollection {
-    padding: 20rem 0;
+    width: auto;
+    height: auto;
+    padding: 5rem 0;
     color: white;
 }
 
 #contact {
+    width: auto;
+    height: auto;
     background-color: black;
     color: white;
     padding-top: .5rem;
     padding-bottom: 1rem;
-    text-align: center;
 }
 
 #contact ul {
