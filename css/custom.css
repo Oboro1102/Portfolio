@@ -8,10 +8,10 @@ body {
     font-weight: 400;
     font-family: 'Noto Sans', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
     line-height: 1.75;
-    
+
 }
 
-body{
+body {
     background: url(../image/minbg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -28,7 +28,6 @@ h6 {
     font-weight: 600;
     font-family: 'Noto Sans', 'PingFang TC', 'Heiti TC', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
     text-align: center;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 h1 {
@@ -68,7 +67,40 @@ img {
 
 /* 時間軸樣式 */
 
+.vtimeline:before {
+    width: 6px;
+    background: red;
+    border-radius: 1rem;
+}
 
+.vtimeline-block:after {
+    top: 28px;
+    border-left: 20px solid gold;
+    border-right: none;
+}
+
+.vtimeline-right:after {
+    border-left: none;
+    border-right: 20px solid gold;
+}
+
+@media only screen and (max-width: 992px) {
+    .vtimeline-block:after {
+        border-left: none;
+        border-right: 20px solid gold;
+    }
+}
+
+.vtimeline-content {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: gold;
+}
+
+.vtimeline-icon {
+    top: 25px;
+    background: white;
+}
 
 /* 網頁樣式 */
 
@@ -78,7 +110,6 @@ img {
     color: white;
     padding: 25rem 0;
     text-align: center;
-    
 }
 
 #home-click {
@@ -92,7 +123,7 @@ img {
     margin-top: 1rem;
     margin-right: 1rem;
     justify-content: flex-end;
- }
+}
 
 #navbarSupportedContent {
     background: white;
@@ -127,6 +158,10 @@ img {
     padding: 5rem 0;
     color: white;
     background-color: #222222;
+}
+
+#worktimeline {
+    color: black;
 }
 
 #workcollection {
