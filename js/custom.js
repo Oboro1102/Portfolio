@@ -36,3 +36,7 @@ $('#contact-click').click(function (e) {
         scrollTop: $('#contact').offset().top
     }, 700);
 });
+
+/*時間軸*/
+
+$('.timeline').timelify()
