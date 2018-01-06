@@ -39,4 +39,4 @@ $('#contact-click').click(function (e) {
 
 /*時間軸*/
 
-$('.timeline').timelify()
+$('#worktimeline').verticalTimeline();
