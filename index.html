@@ -49,7 +49,7 @@
     <!-- 第1個區塊 - 首頁 -->
     <div id="home">
         <div class="container">
-            <h1 data-animate data-animation-classes="animated bounceInDown">我們是宇宙裡最微小的星晨，但，是我們人生最大的主宰！</h1>
+            <h1 data-animate data-animation-classes="animated bounceInDown" style="animation-play-state: paused">我們是宇宙裡最微小的星晨，但，是我們人生最大的主宰！</h1>
         </div>
     </div>
     <!-- 第1個區塊 -->
@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img data-animate data-animation-classes="animated bounceInDown" class="rounded-circle" src="image/149321.jpg" alt="photo" width="400px">
+                    <img data-animate data-animation-classes="animated tada" class="rounded-circle" src="image/149321.jpg" alt="photo" width="400px">
                     <h2 class="mt-5">郭俊甫</h2>
                     <p>平面設計師-視覺設計師-UI設計師</p>
                     <h3 class="mt-5">工作理念</h3>
@@ -111,6 +111,8 @@
                             <li>通路行銷文案撰寫。</li>
                             <li>書籍編製實務。</li>
                         </ul>
+                        <hr>
+                        <p>主要成果：《跟國際級大師學CG電繪：Photoshop＆Painter 數位插圖繪製技法》一書突破萬本銷售。</p>
                     </div>
                     <div>
                         <p>2011/04 - 2012/05</p>
@@ -124,6 +126,8 @@
                             <li>通路行銷文案撰寫。</li>
                             <li>書籍編製實務。</li>
                         </ul>
+                        <hr>
+                        <p>主要成果：結合文編及美編雙重能力，大大提升書籍出版效率，不僅為公司省下大量製作成本，也為公司營收帶來可觀的收益。</p>
                     </div>
                     <div>
                         <p>2012/05 - 2014/08</p>
@@ -140,6 +144,7 @@
                             <li>粉絲團視覺圖文設計編修。</li>
                         </ul>
                         <hr>
+                        <p>主要成果：公司自製產品之包裝設計、2013年台北國際電玩展SONY展場宣傳品設計。</p>
                         <p><a href="https://www.flickr.com/photos/33436937@N06/sets/72157688422251612/" target="_blank">作品閱覽</a></p>
                     </div>
                     <div>
@@ -155,6 +160,7 @@
                             <li>進行期刊書籍的圖文編輯。</li>
                         </ul>
                         <hr>
+                        <p>主要成果：公司對大陸地區銷售產品之包裝設計及各種輔銷品設計。</p>
                         <p><a href="https://www.flickr.com/photos/33436937@N06/sets/72157691080701055/" target="_blank">作品閱覽</a></p>
                     </div>
                     <div>
@@ -173,6 +179,7 @@
                             <li>網頁視覺素材設計製作。</li>
                         </ul>
                         <hr>
+                        <p>主要成果：獨自完成2017年3月於安利美特台北總店舉辦之「《刀劍神域 - 記憶重組 - 特別展》」、2017年4月於三創電競館舉辦之「《闇影詩章》繁體中文版上市記者會」的所有展場布置、周邊、文宣品......等設計製作。</p>
                         <p><a href="https://www.flickr.com/photos/33436937@N06/sets/72157688422522182/" target="_blank">作品閱覽</a></p>
                     </div>
                     <div>
@@ -244,7 +251,7 @@
 
         }())
     </script>
-    
+
     <!-- 時間軸 -->
     <script src="js/vertical-timeline.js"></script>
     <script>
@@ -262,7 +269,7 @@
         var animate = new Animate({
             target: '[data-animate]',
             animatedClass: 'js-animated',
-            offset: [0, 0],
+            offset: [0.5, 0.5],
             delay: 0,
             remove: true,
             scrolled: false,
@@ -281,7 +288,7 @@
     <script src="js/jquery.circliful.min.js"></script>
     <script>
         $(document).ready(function() {
-            $("#your-circle").circliful({
+            $(".skill-circle").circliful({
                 animationStep: 5,
                 foregroundBorderWidth: 5,
                 backgroundBorderWidth: 15,
