@@ -1,5 +1,4 @@
 /*連結轉跳*/
-
 $('#home-click').click(function (e) {
     e.preventDefault();
     $('html,body').animate({
@@ -35,13 +34,4 @@ $('#contact-click').click(function (e) {
     $('html,body').animate({
         scrollTop: $('#contact').offset().top
     }, 700);
-});
-
-/*時間軸*/
-
-$('#worktimeline').verticalTimeline({
-    startLeft: true,
-    alternate: true,
-    animate: "slide",
-    arrows: false
 });
