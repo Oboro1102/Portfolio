@@ -99,13 +99,13 @@ img {
 }
 
 .vtimeline-content {
-    padding: 1rem;
+    padding: .5rem 1.5rem;
     border-radius: 1rem;
     background: gold;
 }
 
 .vtimeline-icon {
-    top: 25px;
+    top: 0px;
     background: white;
 }
 
@@ -169,6 +169,10 @@ img {
 
 #worktimeline {
     color: black;
+}
+
+#worktimeline ol {
+    padding: 0 1rem;
 }
 
 #workcollection {
