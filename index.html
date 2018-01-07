@@ -49,7 +49,7 @@
     <!-- 第1個區塊 - 首頁 -->
     <div id="home">
         <div class="container">
-            <h1 data-animate data-animation-classes="animated bounceIn">我們是宇宙裡最微小的星晨，但，是我們人生最大的主宰！</h1>
+            <h1 data-animate data-animation-classes="animated bounceInDown">我們是宇宙裡最微小的星晨，但，是我們人生最大的主宰！</h1>
         </div>
     </div>
     <!-- 第1個區塊 -->
@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img data-animate data-animation-classes="animated fadeInUp" class="rounded-circle" src="image/149321.jpg" alt="photo" width="400px">
+                    <img data-animate data-animation-classes="animated slideInLeft" class="rounded-circle" src="image/149321.jpg" alt="photo" width="400px">
                     <h2 class="mt-5">郭俊甫</h2>
                     <p>平面設計師-視覺設計師-UI設計師</p>
                     <h3 class="mt-5">工作理念</h3>
@@ -225,8 +225,6 @@
 
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-    <script src="js/jquery.circliful.min.js"></script>
-    <script src="js/vertical-timeline.js"></script>
     <script src="js/custom.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -255,8 +253,8 @@
             animatedClass: 'js-animated',
             offset: [0.5, 0.5],
             delay: 0,
-            remove: false,
-            scrolled: true,
+            remove: true,
+            scrolled: false,
             reverse: false,
             onLoad: true,
             onScroll: true,
@@ -269,6 +267,7 @@
     </script>
 
     <!-- 動態圓圈 -->
+    <script src="js/jquery.circliful.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#your-circle").circliful({
@@ -277,6 +276,17 @@
                 backgroundBorderWidth: 15,
                 percent: 75
             });
+        });
+    </script>
+
+    <!-- 時間軸 -->
+    <script src="js/vertical-timeline.js"></script>
+    <script>
+        $('#worktimeline').verticalTimeline({
+            startLeft: true,
+            alternate: true,
+            animate: "slide",
+            arrows: false
         });
     </script>
 </body>
