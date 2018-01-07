@@ -42,6 +42,6 @@ $('#contact-click').click(function (e) {
 $('#worktimeline').verticalTimeline({
     startLeft: true,
     alternate: true,
-    animate: false,
+    animate: "slide",
     arrows: false
 });
