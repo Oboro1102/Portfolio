@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+    line-height: 1.75;
+
+}
+
+body:before {
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../image/bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: 'Noto Sans', 'PingFang TC', 'Heiti TC', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+    line-height: 175%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 時間軸樣式 */
+
+.vtimeline:before {
+    width: 6px;
+    background: red;
+    border-radius: 1rem;
+}
+
+.vtimeline-block:after {
+    top: 28px;
+    border-left: 20px solid gold;
+    border-right: none;
+}
+
+.vtimeline-right:after {
+    border-left: none;
+    border-right: 20px solid gold;
+}
+
+@media only screen and (max-width: 992px) {
+    .vtimeline-block:after {
+        border-left: none;
+        border-right: 20px solid gold;
+    }
+}
+
+.vtimeline-content {
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    background: gold;
+}
+
+.vtimeline-icon {
+    top: 0px;
+    background: white;
+}
+
+/* 網頁樣式 */
+
+#home {
+    width: auto;
+    height: 100%;
+    color: white;
+    padding: 25rem 0;
+    text-align: center;
+    animation-play-state: paused;
+}
+
+#customenavbar {
+    background: rgba(255, 255, 255, .9)
+}
+
+#home-click {}
+
+#fixednavbar {
+    width: 100%;
+    height: auto;
+    padding: .3rem 0;
+}
+
+#navbarSupportedContent {}
+
+#about {
+    width: auto;
+    height: auto;
+    padding: 3rem 0;
+    text-align: center;
+    color: white;
+    background-color: #222222;
+}
+
+#skill {
+    width: auto;
+    height: auto;
+    padding: 3.5rem 0;
+    color: white;
+    background: black;
+}
+
+#skill p {
+    margin-bottom: 0;
+}
+
+#experience {
+    width: auto;
+    height: auto;
+    padding: 5rem 0;
+    color: white;
+    background-color: #222222;
+}
+
+#worktimeline {
+    color: black;
+}
+
+#worktimeline ol ul {
+    padding: 0 1rem;
+}
+
+#workcollection {
+    width: auto;
+    height: auto;
+    padding: 5rem 0;
+    color: white;
+}
+
+#contact {
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    font-size: .9rem;
+    padding-top: .5rem;
+    padding-bottom: .7rem;
+}
+
+#contact ul {
+    margin-bottom: 0rem;
+}
+
+#contact a {
+    color: white;
+}
