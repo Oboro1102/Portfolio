@@ -76,32 +76,14 @@ img {
 
 .vtimeline:before {
     width: 6px;
-    background: red;
+    background: #24936E;
     border-radius: 1rem;
-}
-
-.vtimeline-block:after {
-    top: 28px;
-    border-left: 20px solid gold;
-    border-right: none;
-}
-
-.vtimeline-right:after {
-    border-left: none;
-    border-right: 20px solid gold;
-}
-
-@media only screen and (max-width: 992px) {
-    .vtimeline-block:after {
-        border-left: none;
-        border-right: 20px solid gold;
-    }
 }
 
 .vtimeline-content {
     padding: .5rem 1.5rem;
     border-radius: 1rem;
-    background: gold;
+    background: rgba(255, 255, 255, .9)
 }
 
 .vtimeline-icon {
@@ -123,8 +105,6 @@ img {
 #customenavbar {
     background: rgba(255, 255, 255, .9)
 }
-
-#home-click {}
 
 #fixednavbar {
     width: 100%;
@@ -160,7 +140,6 @@ img {
     height: auto;
     padding: 5rem 0;
     color: white;
-    background-color: #222222;
 }
 
 #worktimeline {
@@ -176,6 +155,7 @@ img {
     height: auto;
     padding: 5rem 0;
     color: white;
+    background-color: #222222;
 }
 
 #contact {
