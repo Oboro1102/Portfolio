@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img data-animate data-animation-classes="animated slideInLeft" class="rounded-circle" src="image/149321.jpg" alt="photo" width="400px">
+                    <img class="rounded-circle" src="image/149321.jpg" alt="photo" width="400px">
                     <h2 class="mt-5">郭俊甫</h2>
                     <p>平面設計師-視覺設計師-UI設計師</p>
                     <h3 class="mt-5">工作理念</h3>
@@ -244,6 +244,17 @@
 
         }())
     </script>
+    
+    <!-- 時間軸 -->
+    <script src="js/vertical-timeline.js"></script>
+    <script>
+        $('#worktimeline').verticalTimeline({
+            startLeft: true,
+            alternate: true,
+            animate: "slide",
+            arrows: false
+        });
+    </script>
 
     <!-- 動態效果程式 -->
     <script src="js/animate.js"></script>
@@ -279,16 +290,6 @@
         });
     </script>
 
-    <!-- 時間軸 -->
-    <script src="js/vertical-timeline.js"></script>
-    <script>
-        $('#worktimeline').verticalTimeline({
-            startLeft: true,
-            alternate: true,
-            animate: "slide",
-            arrows: false
-        });
-    </script>
 </body>
 
 </html>
