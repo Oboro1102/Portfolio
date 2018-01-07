@@ -19,7 +19,7 @@ body:before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url(../image/minbg.jpg) center center no-repeat;
+    background: url(../image/bg.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -119,24 +119,19 @@ img {
     text-align: center;
 }
 
-#home-click {
-    margin-top: 1rem;
-    margin-left: 1rem;
+#customenavbar {
+    background: rgba(255, 255, 255, .9)
 }
+
+#home-click {}
 
 #fixednavbar {
-    border-radius: .3rem;
-    padding: 0;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    padding: .3rem 0;
 }
 
-#navbarSupportedContent {
-    background: white;
-    border-radius: .3rem;
-    padding: 0 .5rem;
-}
+#navbarSupportedContent {}
 
 #about {
     width: auto;
@@ -150,7 +145,7 @@ img {
 #skill {
     width: auto;
     height: auto;
-    padding: 5rem 0;
+    padding: 3.5rem 0;
     color: white;
     background: black;
 }
@@ -187,10 +182,15 @@ img {
     height: auto;
     background-color: black;
     color: white;
+    font-size: .9rem;
     padding-top: .5rem;
-    padding-bottom: 1rem;
+    padding-bottom: .7rem;
 }
 
 #contact ul {
     margin-bottom: 0rem;
+}
+
+#contact a {
+    color: white;
 }
