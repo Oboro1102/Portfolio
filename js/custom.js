@@ -29,9 +29,3 @@ $('#workcollection-click').click(function (e) {
         scrollTop: $('#workcollection').offset().top
     }, 700);
 });
-$('#contact-click').click(function (e) {
-    e.preventDefault();
-    $('html,body').animate({
-        scrollTop: $('#contact').offset().top
-    }, 700);
-});
