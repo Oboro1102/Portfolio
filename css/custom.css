@@ -112,8 +112,6 @@ img {
     padding: .3rem 0;
 }
 
-#navbarSupportedContent {}
-
 #about {
     width: auto;
     height: auto;
@@ -123,8 +121,11 @@ img {
     background-color: #222222;
 }
 
-#about h2,
-h4 {
+#about h2 {
+    text-align: left;
+}
+
+#about h4 {
     text-align: left;
 }
 
@@ -133,8 +134,11 @@ h4 {
 }
 
 @media only screen and (max-width:992px) {
-    #about h2,
-    h4 {
+    #about h2 {
+        text-align: center;
+    }
+
+    #about h4 {
         text-align: center;
     }
 }
