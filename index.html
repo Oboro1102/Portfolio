@@ -17,6 +17,7 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/jquery.circliful.css" rel="stylesheet">
     <link href="css/vertical-timeline.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
     <!--fontawesome-->
@@ -61,7 +62,7 @@
                     <h4>視覺設計師</h4>
                     <p><i class="fas fa-mobile fa-fw"></i> +886-963-225-352<br>
                         <i class="fas fa-envelope fa-fw"></i> biohazard3le@gmail.com</p>
-                        <hr>
+                    <hr>
                     <h4>工作理念</h4>
                     <p class="text-justify">資訊傳達是行銷宣傳重要的一環，針對各種不同類型的產品或理念，藉助設計師的專業，使用適當的傳達方式才能得到卓越成效。我畢業於文化大學韓國語文學系，因興趣所致，畢業退伍後便以提升設計能力為目標，於各產業中活動。<br> 我待過出版業、3C產品販售、食品販售業以及社群影音行銷公司，先後累積長達8年多的設計經驗，舉凡產品文案發想、輔銷宣傳品設計製作、公關活動視覺規劃......等，都替公司帶來不錯的成效。
                         <br> 身處資訊爆炸的網路世代，為了面對未來更多不一樣的挑戰，我仍持續充實自己，強化設計與行銷宣傳能力，以期讓自己能為公司帶來更多好的迴響，創造業主與員工的雙贏優勢！
@@ -202,8 +203,17 @@
     </div>
     <!-- 作品 -->
     <div id="workcollection">
-        <div class="container">
-            <h2 data-animate data-animation-classes="animated bounce">我的作品</h2>
+        <h2 data-animate data-animation-classes="animated bounce">作品集</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="https://www.flickr.com/photos/33436937@N06/sets/72157688422251612/" target="_blank"><img src="image/work_1.jpg" alt="王碁企業作品"></a></div>
+                <div class="swiper-slide"><a href="https://www.flickr.com/photos/33436937@N06/sets/72157691080701055/" target="_blank"><img src="image/work_2.jpg" alt="達觀國際作品"></a></div>
+                <div class="swiper-slide"><a href="https://www.flickr.com/photos/33436937@N06/sets/72157688422522182/" target="_blank"><img src="image/work_3.jpg" alt="日商點子膠囊作品"></a></div>
+                <div class="swiper-slide"><a href="https://www.flickr.com/photos/33436937@N06/sets/72157691190086324/" target="_blank"><img src="image/work_4.jpg" alt="愛虎數位作品"></a></div>
+                <div class="swiper-slide"><a href="https://www.flickr.com/photos/33436937@N06/sets/72157691081265545/" target="_blank"><img src="image/work_5.jpg" alt="個人創作"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <!-- 頁腳(footer) -->
@@ -221,6 +231,7 @@
 
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
     <script src="js/custom.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -283,6 +294,23 @@
                 backgroundBorderWidth: 15,
                 percent: 75
             });
+        });
+    </script>
+
+    <!-- 輪播套件 -->
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
         });
     </script>
 
