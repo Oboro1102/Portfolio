@@ -91,7 +91,7 @@ img {
     background: white;
 }
 
-/* 網頁樣式 */
+/* 主視覺區塊 */
 
 #home {
     width: auto;
@@ -102,8 +102,10 @@ img {
     animation-play-state: paused;
 }
 
+/* 導覽列 */
+
 #customenavbar {
-    background: rgba(255, 255, 255, .9)
+    background: rgba(255, 255, 255, 1)
 }
 
 #fixednavbar {
@@ -111,6 +113,8 @@ img {
     height: auto;
     padding: .3rem 0;
 }
+
+/* 自介區塊 */
 
 #about {
     width: auto;
@@ -143,6 +147,8 @@ img {
     }
 }
 
+/* 專業區塊 */
+
 #skill {
     width: auto;
     height: auto;
@@ -155,12 +161,43 @@ img {
     margin-bottom: 0;
 }
 
+/* 經歷區塊 */
+
 #experience {
     width: auto;
     height: auto;
     padding: 5rem 0;
     color: white;
 }
+
+/* swiper樣式 */
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 1.5rem;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* 作品區塊 */
 
 #worktimeline {
     color: black;
@@ -177,6 +214,8 @@ img {
     color: white;
     background-color: #222222;
 }
+
+/* 頁尾 */
 
 #copyright {
     width: 100%;
