@@ -71,24 +71,24 @@ img {
     height: auto;
 }
 
+/* 導覽列 */
 
-/* 時間軸樣式 */
-
-.vtimeline:before {
-    width: 6px;
-    background: #24936E;
-    border-radius: 1rem;
+#customenavbar {
+    background-color: white;
 }
 
-.vtimeline-content {
-    padding: .5rem 1.5rem;
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, .9)
+#customenavbar a {
+    color: black;
 }
 
-.vtimeline-icon {
-    top: 0px;
-    background: white;
+#customenavbar a:hover {
+    color: #24936E;
+}
+
+#fixednavbar {
+    width: 100%;
+    height: auto;
+    padding: .3rem 0;
 }
 
 /* 主視覺區塊 */
@@ -100,18 +100,6 @@ img {
     padding: 25rem 0;
     text-align: center;
     animation-play-state: paused;
-}
-
-/* 導覽列 */
-
-#customenavbar {
-    background: rgba(255, 255, 255, 1)
-}
-
-#fixednavbar {
-    width: 100%;
-    height: auto;
-    padding: .3rem 0;
 }
 
 /* 自介區塊 */
@@ -168,6 +156,25 @@ img {
     height: auto;
     padding: 5rem 0;
     color: white;
+}
+
+/* 時間軸樣式 */
+
+.vtimeline:before {
+    width: 6px;
+    background: #24936E;
+    border-radius: 1rem;
+}
+
+.vtimeline-content {
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .9)
+}
+
+.vtimeline-icon {
+    top: 0px;
+    background: white;
 }
 
 /* swiper樣式 */
