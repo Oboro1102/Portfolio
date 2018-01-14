@@ -27,8 +27,9 @@ $('#skill-click').click(function (e) {
     }, 1000);
 });
 $('#workcollection-click').click(function (e) {
+    var barH = $("#customenavbar").height();
     e.preventDefault();
     $('html,body').animate({
-        scrollTop: $('#workcollection').offset().top
+        scrollTop: $('#workcollection').offset().top - barH
     }, 1000);
 });
