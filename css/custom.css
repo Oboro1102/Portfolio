@@ -74,7 +74,7 @@ img {
 /* 導覽列 */
 
 #customenavbar {
-    background-color: white;
+    background: white;
 }
 
 #customenavbar a {
@@ -82,7 +82,7 @@ img {
 }
 
 #customenavbar a:hover {
-    color: #24936E;
+    color: gold;
 }
 
 #fixednavbar {
@@ -149,6 +149,14 @@ img {
     margin-bottom: 0;
 }
 
+.skillcard {
+    padding: 1rem;
+    margin: 1rem 2rem;
+    background: white;
+    border-radius: .5rem;
+    color: black;
+}
+
 /* 經歷區塊 */
 
 #experience {
@@ -163,13 +171,13 @@ img {
 .vtimeline:before {
     width: 6px;
     background: #24936E;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 
 .vtimeline-content {
     padding: .5rem 1.5rem;
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, .9)
+    border-radius: .5rem;
+    background: white;
 }
 
 .vtimeline-icon {
