@@ -33,3 +33,12 @@ $('#workcollection-click').click(function (e) {
         scrollTop: $('#workcollection').offset().top - barH
     }, 1000);
 });
+
+$("#opennav").on("click", function () {
+    $(".overlay").show();
+    $("body").addClass("position-fixed");
+});
+$("#clasenav").on("click", function () {
+    $(".overlay").hide();
+    $("body").removeClass("position-fixed");
+});
