@@ -36,9 +36,9 @@ $('#workcollection-click').click(function (e) {
 
 $("#opennav").on("click", function () {
     $(".overlay").show();
-    $("body").addClass("position-fixed");
+    $("body").addClass("windowband");
 });
 $("#clasenav").on("click", function () {
     $(".overlay").hide();
-    $("body").removeClass("position-fixed");
+    $("body").removeClass("windowband");
 });
