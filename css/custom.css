@@ -84,6 +84,10 @@ img {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.windowband {
+    overflow-y: hidden;
+}
+
 /* 導覽列 */
 
 #customenavbar {
@@ -97,11 +101,6 @@ img {
 #customenavbar a:hover {
     color: gold;
 }
-
-.collapse.show {
-    display: block
-}
-
 
 #fixednavbar {
     width: 100%;
