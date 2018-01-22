@@ -27,12 +27,11 @@
 
 <body>
     <!-- 導覽列 -->
-    <div class="overlay"></div>
     <div id="customenavbar" class="fixed-top">
         <div class="container-fluid">
             <nav id="fixednavbar" class="navbar navbar-expand-lg navbar-light">
                 <a id="home-click" class="navbar-brand" href="#home"><img src="image/logo.png" alt="logo" width="150"></a>
-                <button id="opennav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
     </button>
                 <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
@@ -41,9 +40,6 @@
                         <li class="nav-item active mr-3"><a id="skill-click" class="nav-link" href="#skill"><i class="fas fa-paint-brush fa-lg fa-fw"></i> 專業<span class="sr-only">(current)</span></a></li>
                         <li class="nav-item active mr-3"><a id="experience-click" class="nav-link" href="#experience"><i class="fas fa-building fa-lg fa-fw"></i> 經歷<span class="sr-only">(current)</span></a></li>
                         <li class="nav-item active mr-3"><a id="workcollection-click" class="nav-link" href="#workcollection"><i class="fas fa-suitcase fa-lg fa-fw"></i> 作品<span class="sr-only">(current)</span></a></li>
-                        <button id="clasenav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-times-circle"></i>
-    </button>
                     </ul>
                 </div>
             </nav>
@@ -197,7 +193,7 @@
                             <li>影片剪輯所需的視覺素材製作。</li>
                             <li>FB粉絲團貼文、廣告投放等宣傳圖文設計製作。</li>
                             <li>CIS制定與設計製作。</li>
-                            <li>活動網頁設計製作(UI design、切版)。</li>
+                            <li>前端網頁設計製作。</li>
                         </ul>
                         <hr>
                         <p><a href="https://www.flickr.com/photos/33436937@N06/sets/72157691190086324/" target="_blank">作品閱覽</a></p>
@@ -232,8 +228,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
@@ -256,6 +252,7 @@
             }
 
         }())
+
     </script>
 
     <!-- 時間軸 -->
@@ -267,6 +264,7 @@
             animate: "slide",
             arrows: false
         });
+
     </script>
 
     <!-- 動態效果程式 -->
@@ -288,6 +286,7 @@
             callbackOnAnimate: function(el) {},
         });
         animate.init();
+
     </script>
 
     <!-- 動態圓圈 -->
@@ -301,6 +300,7 @@
                 percent: 75
             });
         });
+
     </script>
 
     <!-- 輪播套件 -->
@@ -318,6 +318,7 @@
                 clickable: true,
             },
         });
+
     </script>
 
 </body>
