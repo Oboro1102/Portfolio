@@ -34,11 +34,3 @@ $('#workcollection-click').click(function (e) {
     }, 1000);
 });
 
-$("#opennav").on("click", function () {
-    $(".overlay").show();
-    $("body").addClass("windowband");
-});
-$("#clasenav").on("click", function () {
-    $(".overlay").hide();
-    $("body").removeClass("windowband");
-});
