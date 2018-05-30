@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+html,
+body {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Noto Sans', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+    line-height: 1.75;
+    color: white;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../image/home_bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: 'Noto Sans', 'PingFang TC', 'Heiti TC', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+    line-height: 175%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+time {
+    display: block;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    color: gold;
+}
+
+
+.text-title-main {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text-title-sub {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-oboroStyle {
+    display: block;
+    background: red;
+    border-radius: 99em;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+
+.btn-oboroStyle a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-oboroStyle:hover,
+.btn-oboroStyle:active {
+    opacity: .85;
+}
+
+/* 導覽列 */
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 52;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.windowband {
+    overflow-y: hidden;
+}
+
+.fillNav {
+    padding-top: 70px;
+}
+
+#navarea {
+    color: white;
+    width: 100%;
+    height: 70px;
+    padding: 1%;
+    font-size: 1.1rem;
+    z-index: 60;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.show-animate {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#navarea.show-animate {
+    height: 50px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 1);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#navarea.show-animate #logo {
+    font-size: 1rem;
+}
+
+#left-side-item ul {
+    height: 70px;
+    margin-left: auto;
+}
+
+#left-side-item li {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+#left-side-item li:last-child {
+    margin-right: 0;
+}
+
+#left-side-item a:hover,
+#left-side-item a:active {
+    color: #F7CD2A;
+    -webkit-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+
+.line-animate::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #F7CD2A;
+    border-radius: 5px;
+    -webkit-transition: all .15s linear;
+    transition: all .15s linear;
+    -webkit-transform: scaleX(1) translateX(-50%);
+    transform: scaleX(1) translateX(-50%);
+}
+
+.line-animate:hover::after {
+    width: 80%;
+}
+
+#logo a,
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    .line-animate:hover::after {
+        display: none;
+    }
+
+    #left-side-item {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 1.1rem;
+        z-index: 60;
+    }
+
+    #left-side-item ul,
+    #left-side-item li {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    #left-side-item.collapsing {
+        left: -100%;
+        -webkit-transition: 0.15s ease;
+        transition: 0.15s ease;
+    }
+
+    #left-side-item.show {
+        left: 0;
+        -webkit-transition: 0.15s ease-out;
+        transition: 0.15s ease-out;
+    }
+
+}
+
+/* 主要內容 */
+
+#home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    color: white;
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+
+#about,
+#experience {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, .8);
+}
+
+#skill {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    background: black;
+}
+
+.InfoZone {
+    position: relative;
+    width: 100%;
+    padding: 3% 10%;
+    z-index: 0;
+}
+
+.InfoZone ul {
+    padding-left: 1.5rem;
+}
+
+.OverlayPicLeft {
+    position: relative;
+    width: 80%;
+    z-index: 1;
+}
+
+.OverlayPicRight {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    text-align: right;
+    z-index: 1;
+}
+
+.FixInfoRight {
+    position: relative;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .85);
+    width: 55%;
+    margin-left: auto;
+    margin-top: -15%;
+    z-index: 2;
+}
+
+.FixInfoLeft {
+    position: relative;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .85);
+    width: 50%;
+    margin-top: -15%;
+    z-index: 2;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    .InfoZone {
+        padding: 0 0 5rem;
+    }
+
+    .OverlayPicLeft,
+    .OverlayPicRight {
+        width: 100%;
+    }
+
+    .FixInfoRight,
+    .FixInfoLeft {
+        width: 80%;
+        margin: -10% auto 0;
+    }
+}
+
+/* 專業 */
+
+.skillcard {
+    width: 30%;
+    padding: 1rem;
+    background: white;
+    border-radius: .5rem;
+    color: black;
+}
+
+.skillcard p {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    .skillcard {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+
+    .skillcard:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#workcollection {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 3rem 1rem 0;
+    background: #222222;
+}
+
+#workcollection a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* 回到頂端 */
+
+#back-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: 0;
+    z-index: 51;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    cursor: pointer;
+}
+
+#back-to-top.show {
+    opacity: .9;
+}
+
+/* 頁尾 */
+
+#copyright {
+    width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+    font-size: .9rem;
+    padding: .5rem 0 .7rem;
+}
