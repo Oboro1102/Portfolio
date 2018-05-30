@@ -9,13 +9,6 @@ $(document).ready(function () {
             $('#back-to-top').removeClass('show');
         }
     });
-    /* 回到頂端動畫 */
-    $('#back-to-top').on('click', function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 500);
-    });
     /* 遮罩&禁止視窗滾動 */
     $(".navshow").on("click", function () {
         $(".overlay").show();
@@ -27,9 +20,14 @@ $(document).ready(function () {
     });
     /* 遮罩關閉選單 */
     $(".overlay").on("click", function () {
-        if ($("#left-side-item.show").length > 0) {
-            $("button#close-left-menu").click();
-        }
+        $("button#close-left-menu").click();
+    });
+    /* 回到頂端動畫 */
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 500);
     });
     /*連結轉跳*/
     $('#logo').click(function (e) {
