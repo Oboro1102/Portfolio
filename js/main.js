@@ -23,45 +23,39 @@ $(document).ready(function () {
         $("button#close-left-menu").click();
     });
     /* 回到頂端動畫 */
-    $('#back-to-top').on('click', function (e) {
-        e.preventDefault();
+    $('#back-to-top').on('click', function () {
         $('html,body').animate({
             scrollTop: 0
         }, 500);
     });
     /*連結轉跳*/
-    $('#logo').click(function (e) {
-        e.preventDefault();
+    $('#logo').click(function () {
         $('html,body').animate({
             scrollTop: 0
-        }, 1000);
+        }, 500);
     });
-    $('#about-click').click(function (e) {
+    $('#about-click').click(function () {
         var barH = $("#navarea").height();
-        e.preventDefault();
         $('html,body').animate({
             scrollTop: $('#about').offset().top - barH
-        }, 1000);
+        }, 500);
     });
-    $('#experience-click').click(function (e) {
+    $('#experience-click').click(function () {
         var barH = $("#navarea").height();
-        e.preventDefault();
         $('html,body').animate({
             scrollTop: $('#experience').offset().top - barH
-        }, 1000);
+        }, 500);
     });
-    $('#skill-click').click(function (e) {
+    $('#skill-click').click(function () {
         var barH = $("#navarea").height();
-        e.preventDefault();
         $('html,body').animate({
             scrollTop: $('#skill').offset().top - barH
-        }, 1000);
+        }, 500);
     });
-    $('#workcollection-click').click(function (e) {
+    $('#workcollection-click').click(function () {
         var barH = $("#navarea").height();
-        e.preventDefault();
         $('html,body').animate({
             scrollTop: $('#workcollection').offset().top - barH
-        }, 1000);
+        }, 500);
     });
 });
