@@ -2,11 +2,9 @@ $(document).ready(function () {
     /*導覽列滑動Fixed*/
     $(window).scroll(function () {
         if ($(window).scrollTop() > 70) {
-            $('body').addClass('fillNav');
             $('#navarea').addClass('show-animate');
             $('#back-to-top').addClass('show');
         } else {
-            $('body').removeClass('fillNav');
             $('#navarea').removeClass('show-animate');
             $('#back-to-top').removeClass('show');
         }
