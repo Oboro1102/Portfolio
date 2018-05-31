@@ -345,7 +345,7 @@ time {
 @media only screen and (max-width:991.98px) {
 
     .InfoZone {
-        padding: 0 0 5rem;
+        padding-bottom: 5rem;
     }
 
     .OverlayPicLeft,
