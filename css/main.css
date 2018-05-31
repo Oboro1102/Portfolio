@@ -415,7 +415,7 @@ time {
     height: 50px;
     position: fixed;
     opacity: 0;
-    z-index: 51;
+    z-index: 9999;
     right: 30px;
     bottom: 30px;
     -webkit-transition: opacity 0.5s ease-out;
