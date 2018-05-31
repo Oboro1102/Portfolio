@@ -7,10 +7,10 @@
     } else {
         root.Animate = factory();
     }
-}(this, function () {
+}(this, function() {
     'use strict';
 
-    var Animate = function (userOptions) {
+    var Animate = function(userOptions) {
         var el = document.createElement('fakeelement');
         var defaultOptions = {
             target: '[data-animate]',
@@ -24,8 +24,8 @@
             onScroll: true,
             onResize: false,
             disableFilter: null,
-            callbackOnInit: function () {},
-            callbackOnAnimate: function () {},
+            callbackOnInit: function() {},
+            callbackOnAnimate: function() {},
         };
 
         this.supports = 'querySelector' in document && 'addEventListener' in window && 'classList' in el && Function.prototype.bind;
@@ -42,7 +42,7 @@
             this.horizontalOffset = this.options.offset[1] ? this.options.offset[1] : this.options.offset[0];
         }
 
-        this.throttledEvent = this._debounce(function () {
+        this.throttledEvent = this._debounce(function() {
             this.render();
         }.bind(this), 15);
     };
@@ -54,12 +54,12 @@
     // @private
     // @author David Walsh
     // @link https://davidwalsh.name/javascript-debounce-function
-    Animate.prototype._debounce = function (func, wait, immediate) {
+    Animate.prototype._debounce = function(func, wait, immediate) {
         var timeout;
-        return function () {
+        return function() {
             var context = this;
             var args = arguments;
-            var later = function () {
+            var later = function() {
                 timeout = null;
                 if (!immediate) {
                     func.apply(context, args);
@@ -79,7 +79,7 @@
      * @private
      * @return {Object} Merged object of arguments
      */
-    Animate.prototype._extend = function () {
+    Animate.prototype._extend = function() {
         var extended = {};
         var length = arguments.length;
 
@@ -87,7 +87,7 @@
          * Merge one object into another
          * @param  {Object} obj  Object to merge into extended object
          */
-        var merge = function (obj) {
+        var merge = function(obj) {
             for (var prop in obj) {
                 if (Object.hasOwnProperty.call(obj, prop)) {
                     extended[prop] = obj[prop];
@@ -118,7 +118,7 @@
      * @private
      * @return {String} Appropriate 'animationEnd' event for browser to handle
      */
-    Animate.prototype._whichAnimationEvent = function () {
+    Animate.prototype._whichAnimationEvent = function() {
         var t;
         var el = document.createElement('fakeelement');
 
@@ -143,7 +143,7 @@
      * @param  {HTMLElement}  el Element to test
      * @return {Boolean}
      */
-    Animate.prototype._isAboveScrollPos = function (el) {
+    Animate.prototype._isAboveScrollPos = function(el) {
         var dimensions = el.getBoundingClientRect();
         var scrollPos = (window.scrollY || window.pageYOffset);
 
@@ -156,7 +156,7 @@
      * @param  {HTMLElement} el Element to get offset for
      * @return {Arrray}    An offset array of [Y,X] offsets
      */
-    Animate.prototype._getElementOffset = function (el) {
+    Animate.prototype._getElementOffset = function(el) {
         var elementOffset = el.getAttribute('data-animation-offset');
         var elementOffsetArray = [this.verticalOffset, this.horizontalOffset];
 
@@ -178,7 +178,7 @@
      * @return {String} Position of scroll
      * @return {Boolean}
      */
-    Animate.prototype._isInView = function (el) {
+    Animate.prototype._isInView = function(el) {
         // Dimensions
         var dimensions = el.getBoundingClientRect();
         var viewportHeight = (window.innerHeight || document.documentElement.clientHeight);
@@ -208,7 +208,7 @@
      * @param  {HTMLElement}  el Element to test
      * @return {Boolean}
      */
-    Animate.prototype._isVisible = function (el) {
+    Animate.prototype._isVisible = function(el) {
         var visibility = el.getAttribute('data-visibility');
         return visibility === 'true';
     };
@@ -219,7 +219,7 @@
      * @param  {HTMLElement}  el Element to test
      * @return {Boolean}
      */
-    Animate.prototype._hasAnimated = function (el) {
+    Animate.prototype._hasAnimated = function(el) {
         var animated = el.getAttribute('data-animated');
         return animated === 'true';
     };
@@ -231,7 +231,7 @@
      * @param  {Object}  obj  Object to test type against
      * @return {Boolean}      Whether object is of a type
      */
-    Animate.prototype._isType = function (type, obj) {
+    Animate.prototype._isType = function(type, obj) {
         var test = Object.prototype.toString.call(obj).slice(8, -1);
         return obj !== null && obj !== undefined && test === type;
     };
@@ -241,19 +241,19 @@
      * @private
      * @param {HTMLElement} el Element to target
      */
-    Animate.prototype._addAnimation = function (el) {
+    Animate.prototype._addAnimation = function(el) {
         if (!this._isVisible(el)) {
             var classes = el.getAttribute('data-animation-classes');
             if (classes) {
                 el.setAttribute('data-visibility', true);
                 var animations = classes.split(' ');
                 var animationDelay = parseInt(el.getAttribute('data-animation-delay'), 10) || this.options.delay;
-                var addAnimation = function (animation) {
+                var addAnimation = function(animation) {
                     el.classList.add(animation);
                 };
 
                 if (animationDelay && this._isType('Number', animationDelay) && animationDelay !== 0) {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         animations.forEach(addAnimation);
                     }, animationDelay);
                 } else {
@@ -272,7 +272,7 @@
      * @private
      * @param {HTMLElement} el Element to target
      */
-    Animate.prototype._removeAnimation = function (el) {
+    Animate.prototype._removeAnimation = function(el) {
         var classes = el.getAttribute('data-animation-classes');
 
         if (classes) {
@@ -280,14 +280,14 @@
             el.removeAttribute('data-animated');
             var animations = classes.split(' ');
             var animationDelay = parseInt(el.getAttribute('data-animation-delay'), 10);
-            var removeAnimation = function (animation) {
+            var removeAnimation = function(animation) {
                 el.classList.remove(animation);
             };
 
             animations.push(this.options.animatedClass);
 
             if (animationDelay && this._isType('Number', animationDelay)) {
-                setTimeout(function () {
+                setTimeout(function() {
                     animations.forEach(removeAnimation);
                 }, animationDelay);
             } else {
@@ -303,19 +303,19 @@
      * @private
      * @param  {HTMLElement} el Element to target
      */
-    Animate.prototype._completeAnimation = function (el) {
+    Animate.prototype._completeAnimation = function(el) {
         // Store animation event
         var animationEvent = this._whichAnimationEvent();
 
         // When animation event has finished
-        el.addEventListener(animationEvent, function () {
+        el.addEventListener(animationEvent, function() {
             var removeOveride = el.getAttribute('data-animation-remove');
 
             // If remove animations on completon option is turned on
             if (removeOveride !== 'false' && this.options.remove) {
                 // Seperate each class held in the animation classes attribute
                 var animations = el.getAttribute('data-animation-classes').split(' ');
-                var removeAnimation = function (animation) {
+                var removeAnimation = function(animation) {
                     el.classList.remove(animation);
                 };
 
@@ -341,7 +341,7 @@
      * Remove event listeners
      * @public
      */
-    Animate.prototype.removeEventListeners = function () {
+    Animate.prototype.removeEventListeners = function() {
         if (this.options.onResize) {
             window.removeEventListener('resize', this.throttledEvent, false);
         }
@@ -355,9 +355,9 @@
      * Add event listeners
      * @public
      */
-    Animate.prototype.addEventListeners = function () {
+    Animate.prototype.addEventListeners = function() {
         if (this.options.onLoad) {
-            document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('DOMContentLoaded', function() {
                 this.render(true);
             }.bind(this));
         }
@@ -375,7 +375,7 @@
      * Initalises Animate.js and adds event listeners
      * @public
      */
-    Animate.prototype.init = function () {
+    Animate.prototype.init = function() {
         // If browser doesn't cut the mustard, let it fail silently
         if (!this.supports) return;
 
@@ -395,7 +395,7 @@
      * Stop all running event listeners & resets options to null
      * @public
      */
-    Animate.prototype.kill = function () {
+    Animate.prototype.kill = function() {
         // If we haven't initialised, there is nothing to kill.
         if (!this.initialised) return;
 
@@ -411,7 +411,7 @@
      * @public
      * @return {}
      */
-    Animate.prototype.render = function (onLoad) {
+    Animate.prototype.render = function(onLoad) {
         if (this.initialised) {
             // If a disability filter function has been passed...
             if (this.options.disableFilter && this._isType('Function', this.options.disableFilter)) {
