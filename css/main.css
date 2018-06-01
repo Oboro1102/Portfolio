@@ -107,6 +107,7 @@ time {
     width: 45px;
     height: 45px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .btn-oboroStyle a {
@@ -358,7 +359,7 @@ time {
 
     .FixInfoRight,
     .FixInfoLeft {
-        width: 80%;
+        width: 85%;
         margin: -10% auto 0;
     }
 }
