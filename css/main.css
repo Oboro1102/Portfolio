@@ -10,15 +10,13 @@ body {
     font-family: 'Noto Sans', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
     line-height: 1.75;
     color: white;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
     background: url(../image/home_bg.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 h1,
@@ -276,7 +274,7 @@ time {
     width: 100%;
     height: 100%;
     color: white;
-    padding: 5rem 0;
+    padding: 1rem;
 }
 
 .logoAnimate {
