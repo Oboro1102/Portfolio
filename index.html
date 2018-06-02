@@ -62,9 +62,12 @@
     </header>
     <!-- 首頁 -->
     <div id="home">
-        <div data-animate data-animation-classes="animated fadeIn"><img class="animateCyborg " src="image/cyborg.png" alt="logo">
-            <img data-animate data-animation-classes="animated rotateLeft" class="animateGearsm" src="image/gear_sm.png" alt="logo">
+        <div class="logoAnimate" data-animate data-animation-classes="animated fadeIn">
+            <img class="animateCyborg" src="image/cyborg.png" alt="logo">
+            <span class="gearAnimate">
+                <img data-animate data-animation-classes="animated rotateLeft" class="animateGearsm" src="image/gear_sm.png" alt="logo">
             <img data-animate data-animation-classes="animated rotateRight" class="animateGearxl" src="image/gear_xl.png" alt="logo">
+            </span>
         </div>
     </div>
     <!-- 關於我 -->
@@ -247,7 +250,7 @@
         </div>
     </div>
     <!-- 回到頂端 -->
-    <div id="back-to-top"><a href="#navarea"><i class="fas fa-chevron-circle-up fa-fw fa-3x" style="color: white"></i></a></div>
+    <div id="back-to-top"><a href="#navarea"><i class="fas fa-chevron-circle-up fa-3x" style="color: white;margin-right: 1px"></i></a></div>
     <!-- 頁腳 -->
     <footer id="copyright">
         <div class="col-sm text-center">© 2018 by Kuo,Chun Fu. All Rights Reserved.</div>
