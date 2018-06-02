@@ -284,11 +284,16 @@ time {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    max-width: 600px;
     height: 100%;
     color: white;
     padding: 5rem 0;
-    margin: 0 auto;
+}
+
+.logoAnimate {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto
 }
 
 .animateCyborg {
@@ -297,21 +302,33 @@ time {
 }
 
 .animateGearxl {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    width: 240px;
-    margin-left: 20rem;
-    margin-top: -38.5rem;
+    width: 100%;
+    max-width: 240px;
+    margin-left: 54%;
+    margin-top: -65%;
 }
 
 .animateGearsm {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    width: 75px;
-    margin-left: 17.25rem;
-    margin-top: -21.5rem;
+    width: 100%;
+    max-width: 80px;
+    margin-left: 46%;
+    margin-top: -33%;
 }
 
+@media only screen and (max-width:577.98px) {
+
+    .animateGearxl {
+        max-width: 40%;
+    }
+
+    .animateGearsm {
+        max-width: 13%;
+    }
+}
 
 @-webkit-keyframes rotateRight {
     0% {
@@ -503,8 +520,19 @@ time {
 /* 回到頂端 */
 
 #back-to-top {
-    width: 50px;
-    height: 50px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 99em;
+    background: #e80012;
     position: fixed;
     opacity: 0;
     z-index: 9999;
@@ -516,7 +544,7 @@ time {
 }
 
 #back-to-top.show {
-    opacity: .9;
+    opacity: 1;
 }
 
 /* 頁尾 */
