@@ -78,12 +78,11 @@ time {
     display: block;
     width: 100%;
     font-family: 'Audiowide', cursive;
-    font-size: 5rem;
+    font-size: 7.5vmin;
     opacity: .5;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    line-height: normal;
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 .text-title-main {
@@ -301,18 +300,18 @@ time {
 .IntroZone {
     position: absolute;
     z-index: 1;
-    width: 30%;
+    width: 40%;
     font-size: 7vmin;
     font-weight: 600;
     line-height: normal;
-    text-shadow: 3px 6px black;
+    text-shadow: .1rem .1rem black;
 }
 
 .logoAnimate {
     position: relative;
     width: 100%;
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 5%;
     max-width: 700px;
 }
 
