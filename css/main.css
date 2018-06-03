@@ -164,7 +164,10 @@ time {
 .btn-oboroStyle:active,
 .btn-workcollection:hover,
 .btn-workcollection:active {
-    opacity: .85;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 /* 導覽列 */
@@ -340,6 +343,10 @@ time {
     line-height: normal;
     margin-top: 10%;
     margin-left: 1.5%;
+}
+
+.IntroZone a {
+    text-decoration: none;
 }
 
 .logoAnimate {
