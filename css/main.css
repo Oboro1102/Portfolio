@@ -108,7 +108,6 @@ time {
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 .text-title-sub {
@@ -122,6 +121,21 @@ time {
     font-size: 2rem;
     font-weight: 600;
     color: white;
+}
+
+.text-skill-title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.text-skill-sub {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: .5rem;
 }
 
 .text-experience-item {
@@ -369,6 +383,11 @@ time {
     text-decoration: none;
 }
 
+.IntroZone p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 .logoAnimate {
     position: relative;
     width: 100%;
@@ -377,11 +396,19 @@ time {
     max-width: 700px;
 }
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width:1600px) {
 
     #home {
         padding: 5.5rem 5%;
     }
+
+    .IntroZone {
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width:1400px) {
 
     .IntroZone {
         width: 25%;
@@ -527,26 +554,21 @@ time {
     width: 100%;
     height: auto;
     padding: 3rem 0;
-    background: black;
+    background: white;
+    color: black
 }
 
 .skillcard {
-    width: 30%;
+    width: 32%;
     padding: 1rem;
-    background: white;
-    border-radius: .5rem;
-    color: black;
-}
-
-.skillcard p {
-    margin-bottom: 0;
+    line-height: normal;
 }
 
 @media only screen and (max-width:991.98px) {
 
     .skillcard {
         width: 85%;
-        margin-bottom: 2rem;
+        margin: 0 auto 2rem;
     }
 
     .skillcard:last-child {
@@ -655,6 +677,7 @@ time {
     padding: 3rem 5rem;
     background: #262626;
     color: #818181;
+    line-height: normal;
 }
 
 #workcollection a {
