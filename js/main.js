@@ -34,25 +34,25 @@ $(document).ready(function () {
             scrollTop: 0
         }, 500);
     });
-    $('#about-click').click(function () {
+    $('.about-click').click(function () {
         var barH = $("#navarea").height();
         $('html,body').animate({
             scrollTop: $('#about').offset().top - barH
         }, 500);
     });
-    $('#experience-click').click(function () {
+    $('.experience-click').click(function () {
         var barH = $("#navarea").height();
         $('html,body').animate({
             scrollTop: $('#experience').offset().top - barH
         }, 500);
     });
-    $('#skill-click').click(function () {
+    $('.skill-click').click(function () {
         var barH = $("#navarea").height();
         $('html,body').animate({
             scrollTop: $('#skill').offset().top - barH
         }, 500);
     });
-    $('#workcollection-click').click(function () {
+    $('.workcollection-click').click(function () {
         var barH = $("#navarea").height();
         $('html,body').animate({
             scrollTop: $('#workcollection').offset().top - barH
