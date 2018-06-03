@@ -80,11 +80,27 @@ time {
     display: block;
     width: 100%;
     font-family: 'Audiowide', cursive;
-    font-size: 7.5vmin;
-    opacity: .5;
+    font-size: 6.5vmin;
+    opacity: .75;
     margin-top: 3rem;
     margin-bottom: 2rem;
     word-break: keep-all;
+}
+
+.text-date {
+    text-align: right;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    time {
+        margin-top: 0;
+    }
+
+    time,
+    .text-date {
+        text-align: center;
+    }
 }
 
 .text-title-main {
@@ -139,7 +155,7 @@ time {
     width: 45px;
     height: 45px;
     text-align: center;
-    margin: 0 auto;
+    margin-left: .5rem;
 }
 
 .btn-workcollection {
@@ -500,6 +516,8 @@ time {
     background: rgba(0, 0, 0, .8);
 }
 
+/* 專業 */
+
 #skill {
     position: relative;
     width: 100%;
@@ -507,6 +525,32 @@ time {
     padding: 3rem 0;
     background: black;
 }
+
+.skillcard {
+    width: 30%;
+    padding: 1rem;
+    background: white;
+    border-radius: .5rem;
+    color: black;
+}
+
+.skillcard p {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    .skillcard {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+
+    .skillcard:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* 經歷 */
 
 .InfoZone {
     position: relative;
@@ -574,31 +618,26 @@ time {
     }
 }
 
-/* 專業 */
-
-.skillcard {
-    width: 30%;
-    padding: 1rem;
-    background: white;
-    border-radius: .5rem;
-    color: black;
+.OutLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: .5rem;
 }
 
-.skillcard p {
-    margin-bottom: 0;
+.OutLinkText {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: gold;
 }
 
-@media only screen and (max-width:991.98px) {
-
-    .skillcard {
-        width: 85%;
-        margin-bottom: 2rem;
-    }
-
-    .skillcard:last-child {
-        margin-bottom: 0;
-    }
-}
+/* 作品 */
 
 #workcollection {
     position: relative;
@@ -620,7 +659,7 @@ time {
 }
 
 .workCover {
-    text-align: right
+    text-align: right;
 }
 
 @media only screen and (max-width:767.98px) {
@@ -682,4 +721,11 @@ time {
     font-size: .9rem;
     text-align: right;
     padding: .5rem 1.5rem;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    #copyright {
+        text-align: center;
+    }
 }
