@@ -41,12 +41,13 @@ h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    margin: 0;
 }
 
 h2 {
     font-size: 2rem;
-    padding-top: 3rem;
 }
 
 h3 {
@@ -104,6 +105,12 @@ time {
     width: 100%;
     font-size: 2rem;
     font-weight: 600;
+    color: white;
+}
+
+.text-experience-item {
+    color: gold;
+    font-size: 1.3rem
 }
 
 .text-Intro {
@@ -126,6 +133,7 @@ time {
 
 .btn-oboroStyle {
     display: block;
+    color: white;
     background: red;
     border-radius: 99em;
     width: 45px;
@@ -134,16 +142,28 @@ time {
     margin: 0 auto;
 }
 
-.btn-Intro a,
-.btn-oboroStyle a {
-    text-decoration: none;
+.btn-workcollection {
+    display: block;
     color: white;
+    background: #e80012;
+    width: 100%;
+    max-width: 493px;
+    border-radius: 99em;
+    text-align: center;
+    margin-top: .75rem;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.2rem;
+    padding: .25rem 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
 }
 
 .btn-Intro:hover,
 .btn-Intro:active,
 .btn-oboroStyle:hover,
-.btn-oboroStyle:active {
+.btn-oboroStyle:active,
+.btn-workcollection:hover,
+.btn-workcollection:active {
     opacity: .85;
 }
 
@@ -306,7 +326,7 @@ time {
     display: flex;
     width: 100%;
     min-height: 100%;
-    padding: 5.5rem 5%;
+    padding: 5.5rem 7%;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
@@ -330,7 +350,11 @@ time {
     max-width: 700px;
 }
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:1400px) {
+
+    #home {
+        padding: 5.5rem 5%;
+    }
 
     .IntroZone {
         width: 25%;
@@ -488,6 +512,10 @@ time {
     padding-left: 1.5rem;
 }
 
+.InfoZone p {
+    margin-top: 0;
+}
+
 .OverlayPicLeft {
     position: relative;
     width: 80%;
@@ -506,7 +534,7 @@ time {
     position: relative;
     padding: 1rem;
     background: rgba(0, 0, 0, .85);
-    width: 55%;
+    width: 50%;
     margin-left: auto;
     margin-top: -15%;
     z-index: 2;
@@ -516,7 +544,7 @@ time {
     position: relative;
     padding: 1rem;
     background: rgba(0, 0, 0, .85);
-    width: 55%;
+    width: 50%;
     margin-top: -15%;
     z-index: 2;
 }
@@ -572,19 +600,39 @@ time {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     width: 100%;
     height: auto;
-    padding: 3rem 1rem 0;
-    background: #222222;
+    padding: 3rem 5rem;
+    background: #262626;
+    color: #818181;
 }
 
 #workcollection a {
-    color: white;
+    color: #818181;
     text-decoration: none;
 }
 
+.workCover {
+    text-align: right
+}
+
+@media only screen and (max-width:767.98px) {
+
+    #workcollection {
+        padding: 1.5rem 1rem;
+        word-break: break-all;
+        text-align: left
+    }
+
+    .workCover {
+        text-align: left
+    }
+
+    .btn-workcollection {
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+}
 
 /* 回到頂端 */
 
@@ -598,8 +646,8 @@ time {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 99em;
     background: #e80012;
     position: fixed;
@@ -613,7 +661,7 @@ time {
 }
 
 #back-to-top.show {
-    opacity: 1;
+    opacity: .9;
 }
 
 /* 頁尾 */
@@ -625,5 +673,6 @@ time {
     background: black;
     color: white;
     font-size: .9rem;
-    padding: .5rem 0 .7rem;
+    text-align: right;
+    padding: .5rem 1.5rem;
 }
