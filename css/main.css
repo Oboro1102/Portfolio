@@ -158,13 +158,13 @@ time {
 .btn-Intro {
     display: block;
     color: white;
-    background: #06204c;
+    background: #e80012;
     border-radius: 99em;
     text-align: center;
     margin-top: .75rem;
-    font-family: 'Audiowide', cursive;
-    font-size: 1.2rem;
-    padding: .25rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .25rem 2rem;
 }
 
 .btn-Intro a {
@@ -191,8 +191,8 @@ time {
     border-radius: 99em;
     text-align: center;
     margin-top: .75rem;
-    font-family: 'Audiowide', cursive;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     padding: .25rem 1rem;
     margin-top: 1rem;
     margin-left: auto;
@@ -427,7 +427,7 @@ time {
     #home {
         display: block;
         min-height: auto;
-        padding: 3rem 1.5rem
+        padding: 3rem 1.5rem 5rem;
     }
 
     .logoAnimate {
@@ -559,9 +559,42 @@ time {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 3rem 0;
-    background: #f2f2f2;
+    padding: 3rem 1rem;
+    background: rgba(255, 255, 255, .95);
     color: black
+}
+
+.skillprogress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 20%;
+    padding: .5rem;
+}
+
+.skillprogress .progress {
+    width: 100%;
+    margin-left: .5rem
+}
+
+@-webkit-keyframes bargrown {
+    0% {
+        width: 0
+    }
+}
+
+@keyframes bargrown {
+    0% {
+        width: 0
+    }
+}
+
+.bargrown {
+    -webkit-animation-name: bargrown;
+    animation-name: bargrown;
 }
 
 .skillcard {
@@ -572,13 +605,23 @@ time {
 
 @media only screen and (max-width:991.98px) {
 
-    .skillcard {
-        width: 85%;
-        margin: 0 auto 2rem;
+    #skill {
+        padding: 3rem;
     }
 
-    .skillcard:last-child {
-        margin-bottom: 0;
+    .skillcard {
+        width: 100%;
+    }
+
+    .skillprogress {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:575.98px) {
+
+    .skillprogress {
+        width: 100%;
     }
 }
 
@@ -609,7 +652,6 @@ time {
     position: relative;
     width: 80%;
     margin-left: auto;
-    text-align: right;
     z-index: 1;
 }
 
