@@ -82,6 +82,16 @@ img {
     height: auto;
 }
 
+strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffd800;
+}
+
+#about strong {
+    font-size: 1.4rem;
+}
+
 time {
     display: block;
     width: 100%;
@@ -571,7 +581,7 @@ time {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 20%;
+    width: 25%;
     padding: .5rem;
 }
 
@@ -598,8 +608,8 @@ time {
 }
 
 .skillcard {
-    width: 32%;
-    padding: 1rem;
+    width: 31%;
+    padding: .5rem;
     line-height: normal;
 }
 
@@ -773,7 +783,7 @@ time {
     background: #e80012;
     position: fixed;
     opacity: 0;
-    z-index: 9999;
+    z-index: 50;
     right: 30px;
     bottom: 30px;
     -webkit-transition: opacity 0.5s ease-out;
