@@ -1,3 +1,4 @@
+$(document).ready(function () {
     /*導覽列滑動Fixed*/
     $(window).scroll(function () {
         if ($(window).scrollTop() > 70) {
@@ -57,3 +58,4 @@
             scrollTop: $('#workcollection').offset().top - barH
         }, 500);
     });
+});
