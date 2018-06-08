@@ -25,7 +25,7 @@ body:before {
     z-index: -1;
     top: 0;
     left: 0;
-    background-image: url(../image/home_bg.jpg);
+    background-image: url(../image/bg_2.jpg);
     background-size: cover;
 }
 
@@ -568,7 +568,7 @@ time {
     width: 100%;
     height: auto;
     padding: 3rem 0;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .55);
 }
 
 /* 專業 */
@@ -578,7 +578,10 @@ time {
     width: 100%;
     height: auto;
     padding: 3rem 1rem;
-    background: rgba(255, 255, 255, .95);
+    background-image: url(../image/bg_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     color: black
 }
 
@@ -818,13 +821,6 @@ time {
     background: black;
     color: white;
     font-size: .9rem;
-    text-align: right;
+    text-align: center;
     padding: .5rem 1.5rem;
-}
-
-@media only screen and (max-width:991.98px) {
-
-    #copyright {
-        text-align: center;
-    }
 }
