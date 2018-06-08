@@ -791,18 +791,19 @@ time {
 /* 回到頂端 */
 
 #back-to-top {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 99em;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    border-radius: 50%;
     background: #e80012;
     position: fixed;
     opacity: 0;
@@ -815,7 +816,7 @@ time {
 }
 
 #back-to-top.show {
-    opacity: .9;
+    opacity: .85;
 }
 
 /* 頁尾 */
