@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', 'Noto Sans', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+    line-height: 1.75;
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-image: url(../image/bg_2.jpg);
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: 'Noto Sans TC', 'Noto Sans', 'PingFang TC', 'Heiti TC', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 7.5vmin;
+    text-align: left;
+}
+
+@media only screen and (max-width:1199.98px) {
+
+    h1 {
+        font-size: 10vmin;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+    line-height: 175%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffd800;
+}
+
+#about strong {
+    font-size: 1.4rem;
+}
+
+time {
+    display: block;
+    width: 100%;
+    font-family: 'Audiowide', cursive;
+    font-size: 6.5vmin;
+    opacity: .75;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    word-break: keep-all;
+}
+
+.text-date {
+    text-align: right;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    time {
+        margin-top: 0;
+    }
+
+    time,
+    .text-date {
+        text-align: center;
+    }
+}
+
+.text-title-main {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text-title-sub {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.text-contact {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.text-skill-title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.text-skill-sub {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: .5rem;
+}
+
+.text-experience-item {
+    color: gold;
+    font-size: 1.3rem
+}
+
+.text-Intro {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn-Intro {
+    color: white;
+    background: #e80012;
+    border-radius: 99em;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .25rem 2rem;
+}
+
+.btn-Intro a {
+    color: white;
+}
+
+.btn-oboroStyle {
+    display: block;
+    color: white;
+    background: red;
+    border-radius: 99em;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-left: .5rem;
+}
+
+.btn-workcollection {
+    display: block;
+    color: white;
+    background: #e80012;
+    width: 100%;
+    max-width: 493px;
+    border-radius: 99em;
+    text-align: center;
+    margin-top: .75rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .25rem 1rem;
+    margin-top: 1rem;
+    margin-left: auto;
+}
+
+.navclose:hover,
+.navclose:active,
+.btn-Intro:hover,
+.btn-Intro:active,
+.btn-oboroStyle:hover,
+.btn-oboroStyle:active,
+.btn-workcollection:hover,
+.btn-workcollection:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+/* 導覽列 */
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 52;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.windowband {
+    overflow-y: hidden;
+}
+
+#navarea {
+    color: white;
+    width: 100%;
+    height: 70px;
+    padding: 1% 2.5%;
+    font-size: 1.3rem;
+    z-index: 60;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+#logo {
+    max-width: 20%;
+    min-width: 160px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.show-animate {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#navarea.show-animate {
+    height: 50px;
+    font-size: 1.1rem;
+    background: black;
+}
+
+#navarea.show-animate #logo {
+    max-width: 15%;
+}
+
+#left-side-item ul {
+    height: 70px;
+    margin-left: auto;
+}
+
+#left-side-item li {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+#left-side-item li:last-child {
+    margin-right: 0;
+}
+
+#left-side-item a:hover,
+#left-side-item a:active {
+    color: #F7CD2A;
+    -webkit-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+
+.line-animate::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #F7CD2A;
+    border-radius: 5px;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    -webkit-transform: scaleX(1) translateX(-50%);
+    transform: scaleX(1) translateX(-50%);
+}
+
+.line-animate:hover::after {
+    width: 80%;
+}
+
+@media only screen and (max-width:767.98px) {
+
+    .line-animate:hover::after {
+        display: none;
+    }
+
+    #left-side-item {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 1.1rem;
+        z-index: 60;
+    }
+
+    #left-side-item ul,
+    #left-side-item li {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    #left-side-item.collapsing {
+        left: -100%;
+        -webkit-transition: 0.15s ease;
+        transition: 0.15s ease;
+    }
+
+    #left-side-item.show {
+        left: 0;
+        -webkit-transition: 0.15s ease;
+        transition: 0.15s ease;
+    }
+
+}
+
+/* 主要內容 */
+
+#home {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    padding: 5.5rem 7%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.IntroZone {
+    position: absolute;
+    z-index: 1;
+    width: 35%;
+    font-weight: 600;
+    line-height: normal;
+    top: 29%;
+    left: 8.5%;
+}
+
+.IntroZone a {
+    text-decoration: none;
+}
+
+.IntroZone p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.logoAnimate {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: 8%;
+    max-width: 700px;
+}
+
+@media only screen and (max-width:1600px) {
+
+    #home {
+        padding: 5.5rem 5%;
+    }
+
+    .IntroZone {
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width:1400px) {
+
+    .IntroZone {
+        width: 25%;
+        top: 20%;
+    }
+
+}
+
+@media only screen and (max-width:1300px) {
+
+    .IntroZone {
+        width: 21.5%;
+    }
+
+}
+
+@media only screen and (max-width:1199.98px) {
+
+    #home {
+        min-height: auto;
+        padding: 3rem 1.5rem 5rem;
+    }
+
+    .logoAnimate {
+        margin: 0 auto;
+    }
+
+    .IntroZone {
+        position: relative;
+        width: 90%;
+        top: 0;
+        left: 0;
+        margin: 3rem auto 0;
+    }
+
+}
+
+.animateCyborg {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.animateGearxl {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: 284px;
+    right: 6.5%;
+    bottom: 25%;
+}
+
+.animateGearsm {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    max-width: 89px;
+    right: 41.5%;
+    bottom: 20%;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    .animateGearxl {
+        max-width: 40%;
+        right: 6%;
+        bottom: 25%;
+    }
+
+    .animateGearsm {
+        max-width: 13%;
+        right: 41%;
+        bottom: 20%;
+    }
+}
+
+@-webkit-keyframes rotateRight {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+
+@keyframes rotateRight {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.rotateRight {
+    -webkit-animation-name: rotateRight;
+    animation-name: rotateRight;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+@-webkit-keyframes rotateLeft {
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotateLeft {
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.rotateLeft {
+    -webkit-animation-name: rotateLeft;
+    animation-name: rotateLeft;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+#about,
+#experience {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+/* 專業 */
+
+#skill {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3rem 1rem;
+    background-image: url(../image/bg_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black
+}
+
+.skillprogress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 25%;
+    padding: .5rem;
+}
+
+.skillprogress .progress {
+    width: 100%;
+    margin-left: .5rem
+}
+
+@-webkit-keyframes bargrown {
+    0% {
+        width: 0
+    }
+}
+
+@keyframes bargrown {
+    0% {
+        width: 0
+    }
+}
+
+.bargrown {
+    -webkit-animation-name: bargrown;
+    animation-name: bargrown;
+}
+
+.skillcard {
+    width: 31%;
+    padding: .5rem;
+    line-height: normal;
+}
+
+.skillcard p {
+    margin: 0;
+    padding-top: .5rem;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    #skill {
+        padding: 3rem;
+    }
+
+    .skillcard {
+        width: 100%;
+        padding: 1rem .5rem;
+    }
+
+    .skillprogress {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:575.98px) {
+
+    .skillprogress {
+        width: 100%;
+    }
+}
+
+/* 經歷 */
+
+.InfoZone {
+    position: relative;
+    width: 100%;
+    padding: 3rem 5rem;
+    z-index: 0;
+}
+
+.InfoZone ul {
+    padding-left: 1.5rem;
+}
+
+.InfoZone p {
+    margin-top: 0;
+}
+
+.OverlayPicLeft {
+    position: relative;
+    width: 80%;
+    z-index: 1;
+}
+
+.OverlayPicRight {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.FixInfoRight {
+    position: relative;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .85);
+    width: 50%;
+    margin-left: auto;
+    margin-top: -15%;
+    z-index: 2;
+}
+
+.FixInfoLeft {
+    position: relative;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .85);
+    width: 50%;
+    margin-top: -15%;
+    z-index: 2;
+}
+
+@media only screen and (max-width:991.98px) {
+
+    .InfoZone {
+        padding: 3rem 1rem;
+    }
+
+    .OverlayPicLeft,
+    .OverlayPicRight {
+        width: 100%;
+    }
+
+    .FixInfoRight,
+    .FixInfoLeft {
+        width: 85%;
+        margin: -10% auto 0;
+    }
+}
+
+.OutLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: .5rem;
+}
+
+.OutLinkText {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: gold;
+}
+
+/* 作品 */
+
+#workcollection {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 3rem 5rem;
+    background: #262626;
+    color: #818181;
+    line-height: normal;
+}
+
+#workcollection a {
+    color: #818181;
+    text-decoration: none;
+}
+
+.workCover {
+    text-align: right;
+}
+
+@media only screen and (max-width:767.98px) {
+
+    #workcollection {
+        padding: 1.5rem 1rem;
+        word-break: break-all;
+        text-align: left
+    }
+
+    .workCover {
+        text-align: left
+    }
+
+    .btn-workcollection {
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+}
+
+/* 回到頂端 */
+
+#back-to-top {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #e80012;
+    position: fixed;
+    opacity: 0;
+    z-index: 50;
+    right: 30px;
+    bottom: 30px;
+    -webkit-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    cursor: pointer;
+}
+
+#back-to-top.show {
+    opacity: .85;
+}
+
+#back-to-top:hover,
+#back-to-top:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+/* 頁尾 */
+
+#copyright {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: black;
+    color: white;
+    font-size: .9rem;
+    text-align: center;
+    padding: .5rem 1.5rem;
+}
