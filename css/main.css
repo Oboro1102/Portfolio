@@ -493,14 +493,14 @@ time {
 
     .animateGearxl {
         max-width: 40%;
-        margin-left: 54%;
-        margin-top: -65%;
+        right: 6%;
+        bottom: 25%;
     }
 
     .animateGearsm {
         max-width: 13%;
-        margin-left: 46%;
-        margin-top: -33%;
+        right: 41%;
+        bottom: 20%;
     }
 }
 
