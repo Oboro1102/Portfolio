@@ -815,6 +815,10 @@ time {
     cursor: pointer;
 }
 
+#back-to-top a {
+    padding-top: 1px;
+}
+
 #back-to-top.show {
     opacity: .85;
 }
