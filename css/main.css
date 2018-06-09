@@ -206,6 +206,8 @@ time {
     margin-left: auto;
 }
 
+.navclose:hover,
+.navclose:active,
 .btn-Intro:hover,
 .btn-Intro:active,
 .btn-oboroStyle:hover,
@@ -815,6 +817,14 @@ time {
 
 #back-to-top.show {
     opacity: .85;
+}
+
+#back-to-top:hover,
+#back-to-top:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 /* 頁尾 */
