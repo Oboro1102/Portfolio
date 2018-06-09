@@ -376,9 +376,6 @@ time {
 
 #home {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 100%;
     top: 0;
     left: 0;
@@ -410,6 +407,8 @@ time {
 .logoAnimate {
     position: relative;
     width: 100%;
+    top: 0;
+    left: 0;
     margin-left: auto;
     margin-right: 8%;
     max-width: 700px;
@@ -447,7 +446,6 @@ time {
 @media only screen and (max-width:1199.98px) {
 
     #home {
-        display: block;
         min-height: auto;
         padding: 3rem 1.5rem 5rem;
     }
@@ -468,6 +466,8 @@ time {
 
 .animateCyborg {
     position: relative;
+    top: 0;
+    left: 0;
     z-index: 0;
 }
 
@@ -476,8 +476,8 @@ time {
     z-index: 2;
     width: 100%;
     max-width: 284px;
-    margin-left: 53%;
-    margin-top: -65%;
+    right: 6.5%;
+    bottom: 25%;
 }
 
 .animateGearsm {
@@ -485,8 +485,8 @@ time {
     z-index: 1;
     width: 100%;
     max-width: 89px;
-    margin-left: 46%;
-    margin-top: -32%;
+    right: 41.5%;
+    bottom: 20%;
 }
 
 @media only screen and (max-width:991.98px) {
