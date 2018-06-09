@@ -29,6 +29,7 @@
     margin: auto 0;
     color: #fff;
     text-align: right;
+    line-height: normal;
     background-color: rgba(0, 0, 0, .85);
     -webkit-transition: width .6s linear;
     transition: width .6s linear;
