@@ -23,7 +23,8 @@ $(document).ready(function () {
         $("button#close-left-menu").click();
     });
     /* 回到頂端動畫 */
-    $('#back-to-top').on('click', function () {
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
         }, 500);
