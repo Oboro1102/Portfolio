@@ -21,7 +21,7 @@ body:before {
     content: '';
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     top: 0;
     left: 0;
@@ -206,6 +206,8 @@ time {
     margin-left: auto;
 }
 
+
+
 .navclose:hover,
 .navclose:active,
 .btn-Intro:hover,
@@ -218,6 +220,7 @@ time {
     transform: scale(1.1);
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    color: white;
 }
 
 /* 導覽列 */
@@ -226,7 +229,7 @@ time {
     position: fixed;
     display: none;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -762,7 +765,8 @@ time {
     line-height: normal;
 }
 
-#workcollection a {
+.non_stytle,
+.non_stytle:hover {
     color: #818181;
     text-decoration: none;
 }
