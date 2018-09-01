@@ -38,11 +38,11 @@ $(document).ready(function () {
     $('.smooth_hash').on("click", function () {
         if ($("#navarea").hasClass("show-animate")) {
             $('html,body').animate({
-                scrollTop: $($(this).attr("href")).offset().top - 50
+                scrollTop: $($(this).attr("href")).offset().top - 49
             }, 500);
         } else {
             $('html,body').animate({
-                scrollTop: $($(this).attr("href")).offset().top - 120
+                scrollTop: $($(this).attr("href")).offset().top - 119
             }, 500);
         }
         return false;
