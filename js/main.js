@@ -29,9 +29,8 @@ $('#back-to-top,#logo').on('click', function () {
 });
 /*連結轉跳*/
 $('.about-click').click(function () {
-    var barH = $("#navarea").height();
     $('html,body').animate({
-        scrollTop: $('#about').offset().top - barH
+        scrollTop: $('#about').offset().top - 50
     }, 500);
 });
 $('.experience-click').click(function () {
