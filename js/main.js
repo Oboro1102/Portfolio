@@ -30,7 +30,7 @@ $('#back-to-top,#logo').on('click', function () {
 /*連結轉跳*/
 $('.about-click').click(function () {
     $('html,body').animate({
-        scrollTop: $('#about').offset().top + 50
+        scrollTop: $('#about').offset().top - 50
     }, 500);
 });
 $('.experience-click').click(function () {
