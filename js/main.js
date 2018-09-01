@@ -36,7 +36,7 @@ $('.about-click').click(function () {
 $('.experience-click').click(function () {
     var barH = $("#navarea").height();
     $('html,body').animate({
-        scrollTop: $('#experience').offset().top - barH
+        scrollTop: $('#experience').offset().top + barH
     }, 500);
 });
 $('.skill-click').click(function () {
