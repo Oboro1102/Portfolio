@@ -22,17 +22,12 @@ $(".overlay").on("click", function () {
     $("button#close-left-menu").click();
 });
 /* 回到頂端動畫 */
-$('#back-to-top').on('click', function () {
+$('#back-to-top,#logo').on('click', function () {
     $('html,body').animate({
         scrollTop: 0
     }, 500);
 });
 /*連結轉跳*/
-$('#logo').click(function () {
-    $('html,body').animate({
-        scrollTop: 0
-    }, 500);
-});
 $('.about-click').click(function () {
     var barH = $("#navarea").height();
     $('html,body').animate({
