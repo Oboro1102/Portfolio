@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     /*導覽列滑動Fixed*/
-    $(window).scroll(function () {
+    $(window).on("scroll",function () {
         if ($(this).scrollTop() > 0) {
             $('#navarea').addClass('show-animate');
             $('#back-to-top').show("fade",300);
