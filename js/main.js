@@ -8,7 +8,7 @@ $(document).ready(function () {
         } else {
             $('#navarea').removeClass('show-animate');
             $('#back-to-top').hide();
-        }
+        };
     });
 
     /* 遮罩&禁止視窗滾動 */
@@ -43,7 +43,7 @@ $(document).ready(function () {
             $('html,body').animate({
                 scrollTop: $($(this).attr("href")).offset().top - 119
             }, 500);
-        }
+        };
     });
 
 });
