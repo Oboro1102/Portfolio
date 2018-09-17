@@ -2,12 +2,12 @@ $(document).ready(function () {
 
     /*導覽列滑動Fixed*/
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 0) {
+        if ($(this).scrollTop() > 0) {
             $('#navarea').addClass('show-animate');
-            $('#back-to-top').addClass('show');
+            $('#back-to-top').show("fade",300);
         } else {
             $('#navarea').removeClass('show-animate');
-            $('#back-to-top').removeClass('show');
+            $('#back-to-top').hide();
         }
     });
 
@@ -27,15 +27,16 @@ $(document).ready(function () {
     });
 
     /* 回到頂端動畫 */
-    $('#back-to-top,#logo').on('click', function () {
+    $('#back-to-top,#logo').on('click', function (e) {
+        e.preventDefault;
         $('html,body').animate({
             scrollTop: 0
         }, 500);
-        return false;
     });
 
     /*連結轉跳*/
-    $('.smooth_hash').on("click", function () {
+    $('.smooth_hash').on("click", function (e) {
+        e.preventDefault;
         if ($("#navarea").hasClass("show-animate")) {
             $('html,body').animate({
                 scrollTop: $($(this).attr("href")).offset().top - 49
@@ -45,7 +46,6 @@ $(document).ready(function () {
                 scrollTop: $($(this).attr("href")).offset().top - 119
             }, 500);
         }
-        return false;
     });
 
 });
