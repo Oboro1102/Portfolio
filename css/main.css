@@ -788,24 +788,18 @@ time {
 /* 回到頂端 */
 
 #back-to-top {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    display: none;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background: #e80012;
+    color: white;
     position: fixed;
-    opacity: 0;
     z-index: 50;
     right: 30px;
     bottom: 30px;
+    text-align: center;
+    line-height: 55px;
     -webkit-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
     cursor: pointer;
@@ -813,10 +807,6 @@ time {
 
 #back-to-top a {
     padding-top: 1px;
-}
-
-#back-to-top.show {
-    opacity: .85;
 }
 
 #back-to-top:hover,
