@@ -27,6 +27,8 @@ body:before {
     left: 0;
     background-image: url(../image/bg_2.jpg);
     background-size: cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 h1,
