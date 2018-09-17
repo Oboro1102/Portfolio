@@ -27,16 +27,14 @@ $(document).ready(function () {
     });
 
     /* 回到頂端動畫 */
-    $('#back-to-top,#logo').on('click', function (e) {
-        e.preventDefault;
+    $('#back-to-top,#logo').on('click', function () {
         $('html,body').animate({
             scrollTop: 0
         }, 500);
     });
 
     /*連結轉跳*/
-    $('.smooth_hash').on("click", function (e) {
-        e.preventDefault;
+    $('.smooth_hash').on("click", function () {
         if ($("#navarea").hasClass("show-animate")) {
             $('html,body').animate({
                 scrollTop: $($(this).attr("href")).offset().top - 49
