@@ -40,8 +40,8 @@
             <div id="logo"><img src="image/logo.png" alt="logo"></div>
             <!-- 左邊按鈕 -->
             <button class="navbar-toggler navshow" type="button" data-toggle="collapse" data-target="#left-side-item" aria-controls="left-side-item" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars fa-lg" style="color: white"></i>
-        </button>
+                <i class="fas fa-bars fa-lg" style="color: white"></i>
+            </button>
             <!-- Left slide -->
             <div id="left-side-item" class="collapse navbar-collapse">
                 <ul class="navbar-nav">
@@ -56,15 +56,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link line-animate smooth_hash" href="#workcollection"><i class="fab fa-digital-ocean fa-lg fa-fw"></i> 作品<span class="sr-only">作品</span></a>
+                        <a class="nav-link line-animate smooth_hash" href="#workcollection"><i class="fab fa-digital-ocean fa-lg fa-fw"></i> 作品<span class="sr-only">作品</span></a>
                     </li>
                 </ul>
                 <button id="close-left-menu" class="navbar-toggler navclose" type="button" data-toggle="collapse" data-target="#left-side-item" aria-controls="left-side-item" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="far fa-times-circle fa-2x" style="color: gold"></i></button>
+                    <i class="far fa-times-circle fa-2x" style="color: gold"></i></button>
             </div>
         </nav>
     </header>
     <!-- 首頁 -->
-    <div id="home">
+    <section id="home">
         <div class="logoAnimate" data-animate data-animation-classes="animated jackInTheBox">
             <img class="animateCyborg" src="image/cyborg.png" alt="logo">
             <img data-animate data-animation-classes="animated rotateLeft" class="animateGearsm" src="image/gear_sm.png" alt="logo">
@@ -77,9 +78,9 @@
             <p>憑藉豐富的業界經驗及深入的設計脈絡，有我專業的協助，定能將您的事業帶到無與倫比的高峰。</p>
             <a class="smooth_hash btn btn-Intro" href="#about" role="button">了解更多</a>
         </div>
-    </div>
+    </section>
     <!-- 關於我 -->
-    <div id="about">
+    <section id="about">
         <div class="InfoZone">
             <div class="OverlayPicRight" style="max-width: 1100px">
                 <img src="image/1212bobor.jpg" alt="avatar">
@@ -92,8 +93,8 @@
                 <p>為了確保所有想述說的資訊都能精準地傳達到，將資訊進行有條理的彙整與規劃，針對各種不同的媒介，最佳化視覺呈現方式，才能讓推廣得到最卓越的成效，也是因應現代市場快速變化的最好方法。</p>
             </div>
         </div>
-    </div>
-    <div id="skill">
+    </section>
+    <section id="skill">
         <div class="text-title-main">專業能力</div>
         <div class="InfoZone">
             <div class="row mb-5">
@@ -161,9 +162,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- 經歷 -->
-    <div id="experience">
+    <section id="experience">
         <div class="text-title-main">職涯經歷</div>
         <div class="InfoZone">
             <time>2009/10 - 2011/03</time>
@@ -310,9 +311,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- 作品 -->
-    <footer id="workcollection">
+    <section id="workcollection">
         <div class="col-md-6 workCover">
             <img src="image/collection_cover.png" alt="個人創作">
             <a class="btn btn-workcollection" role="button" href="https://www.flickr.com/photos/33436937@N06/collections/72157642212644223/" target="_blank">閱覽作品</a>
@@ -326,11 +327,11 @@
             </div>
             <div class="col mt-2" style="max-width: 493px">
                 <small>
-                   本網站使用 Bootstrap 4 與部分開源套件設計製作完成。如覺得此版型不錯，想運用於其他地方者，歡迎您與我連絡，感謝！<br>體驗最佳瀏覽效果請使用Chrome瀏覽器。
-               </small>
+                    本網站使用 Bootstrap 4 與部分開源套件設計製作完成。如覺得此版型不錯，想運用於其他地方者，歡迎您與我連絡，感謝！<br>體驗最佳瀏覽效果請使用Chrome瀏覽器。
+                </small>
             </div>
         </div>
-    </footer>
+    </section>
     <!-- 回到頂端 -->
     <div id="back-to-top"><i class="fas fa-chevron-circle-up fa-fw fa-2x"></i></div>
     <!-- 頁腳 -->
@@ -346,9 +347,6 @@
     <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/popper.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
-    <!-- 頁面程式 -->
-    <script src="js/main.js" type="text/javascript"></script>
 
     <!-- 動態效果程式 -->
     <script src="js/animate.js" type="text/javascript"></script>
@@ -370,6 +368,7 @@
             callbackOnAnimate: function(el) {},
         });
         animate.init();
+
     </script>
 
     <!-- 輪播效果程式 -->
@@ -382,9 +381,13 @@
             loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
-            autoplayHoverPause: true,
+            autoplayHoverPause: false,
         })
+
     </script>
+
+    <!-- 頁面程式 -->
+    <script src="js/main.js" type="text/javascript"></script>
 
 </body>
 
