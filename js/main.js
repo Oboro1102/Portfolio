@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
     /*導覽列滑動Fixed*/
-    $(window).on("scroll",function () {
+    $(window).bind("scroll load", function () {
         if ($(this).scrollTop() > 0) {
             $('#navarea').addClass('show-animate');
-            $('#back-to-top').show("fade",300);
+            $('#back-to-top').show("fade", 300);
         } else {
             $('#navarea').removeClass('show-animate');
             $('#back-to-top').hide();
