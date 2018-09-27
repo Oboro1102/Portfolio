@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url( //fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 html,
 body {
@@ -192,6 +192,23 @@ time {
     margin-left: .5rem;
 }
 
+.btn-oboroStyle-platform {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    background: red;
+    border-radius: 99em;
+    height: 45px;
+    margin-right: auto;
+    padding: 0 .5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
 .btn-workcollection {
     display: block;
     color: white;
@@ -208,14 +225,14 @@ time {
     margin-left: auto;
 }
 
-
-
 .navclose:hover,
 .navclose:active,
 .btn-Intro:hover,
 .btn-Intro:active,
 .btn-oboroStyle:hover,
 .btn-oboroStyle:active,
+.btn-oboroStyle-platform:hover,
+.btn-oboroStyle-platform:active,
 .btn-workcollection:hover,
 .btn-workcollection:active {
     -webkit-transform: scale(1.1);
@@ -508,6 +525,7 @@ time {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
@@ -520,6 +538,7 @@ time {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
@@ -540,6 +559,7 @@ time {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
+
     to {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -551,6 +571,7 @@ time {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
+
     to {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
