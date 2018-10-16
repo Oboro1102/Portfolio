@@ -1,19 +1,5 @@
 /* bootstrap 4 custom*/
 
-.navbar {
-    width: 100%;
-    height: 100%;
-    padding: .5rem;
-}
-
-@media only screen and (max-width:300px) {
-
-    .navbar {
-        padding: .5rem 0;
-    }
-
-}
-
 .progress {
     height: 1.5rem;
     padding-left: .3rem;
@@ -30,7 +16,7 @@
     color: #fff;
     text-align: right;
     line-height: normal;
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(75, 212, 180, 1);
     -webkit-transition: width .6s linear;
     transition: width .6s linear;
 }
