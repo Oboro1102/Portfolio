@@ -658,6 +658,13 @@ strong {
     padding: .5rem 0;
 }
 
+.web_collection_card .web_collection_card_content_small {
+    padding-top: 0;
+    text-align: left;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
 .web_collection_card .OutLink_btn {
     margin-top: 0;
 }
