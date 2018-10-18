@@ -697,7 +697,7 @@ strong {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    padding: 2rem 8vw;
+    padding: 2rem 7vw;
     background: #262626;
     line-height: normal;
     z-index: 1;
@@ -719,13 +719,21 @@ strong {
     word-break: break-all;
 }
 
+@media only screen and (max-width:991.98px) {
+
+    #connection {
+        padding: 2rem 4vw;
+    }
+
+}
+
 @media only screen and (max-width:767.98px) {
 
     #connection {
         padding: 1.5rem 1rem;
     }
 
-    #connection .col-md-8 {
+    #connection .col-md-7 {
         margin-top: 2rem;
     }
 
