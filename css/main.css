@@ -246,7 +246,8 @@ strong {
     cursor: pointer;
 }
 
-#back_to_top:hover {
+#back_to_top:hover,
+#back_to_top:active {
     background: #ffd800;
     color: black;
     -webkit-transition: all .3s linear;
@@ -529,7 +530,8 @@ strong {
     cursor: pointer;
 }
 
-.experience_card_collapse:hover {
+.experience_card_collapse:hover,
+.experience_card_collapse:active {
     border: 1px solid #e80012;
     color: white;
     background: #e80012;
@@ -551,7 +553,8 @@ strong {
     cursor: pointer;
 }
 
-.OutLink_btn:hover {
+.OutLink_btn:hover,
+.OutLink_btn:active {
     border: 1px solid #005caf;
     color: white;
     background: #005caf;
