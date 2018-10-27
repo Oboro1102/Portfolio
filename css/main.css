@@ -131,7 +131,8 @@ strong {
     text-shadow: none;
 }
 
-.btn_Intro:hover {
+.btn_Intro:hover,
+.btn_Intro:active {
     color: black;
     background: #ffd800;
     text-shadow: none;
