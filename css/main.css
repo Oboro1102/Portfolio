@@ -131,8 +131,7 @@ strong {
     text-shadow: none;
 }
 
-.btn_Intro:hover,
-.btn_Intro:active {
+.btn_Intro:hover {
     color: black;
     background: #ffd800;
     text-shadow: none;
@@ -247,8 +246,7 @@ strong {
     cursor: pointer;
 }
 
-#back_to_top:hover,
-#back_to_top:active {
+#back_to_top:hover {
     background: #ffd800;
     color: black;
     -webkit-transition: all .3s linear;
@@ -522,12 +520,19 @@ strong {
     width: 100%;
     padding: .5rem;
     border-radius: 99em;
-    background: #005caf;
+    background: #e80012;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
     cursor: pointer;
+}
+
+.experience_card_collapse:hover {
+    background: white;
+    color: #e80012;
+    border: 1px solid #e80012;
+    text-decoration: none;
 }
 
 .OutLink_btn {
@@ -544,12 +549,10 @@ strong {
     cursor: pointer;
 }
 
-.experience_card_collapse:hover,
-.experience_card_collapse:active,
-.OutLink_btn:hover,
-.OutLink_btn:active {
-    background: #e80012;
-    color: white;
+.OutLink_btn:hover {
+    background: white;
+    color: #005caf;
+    border: 1px solid #005caf;
     text-decoration: none;
 }
 
