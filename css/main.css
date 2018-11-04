@@ -532,7 +532,8 @@ strong {
 }
 
 .experience_card_collapse:hover,
-.experience_card_collapse:active {
+.experience_card_collapse:active,
+.experience_card_collapse.active {
     border: 1px solid #e80012;
     color: white;
     background: #e80012;
