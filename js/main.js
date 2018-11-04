@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    /*導覽列滑動Fixed*/
+    // 導覽列滑動Fixed
     $(window).bind("scroll load", function () {
         if ($(this).scrollTop() > 0) {
             $("#navarea").addClass("scroll");
@@ -8,17 +8,17 @@ $(document).ready(function () {
         } else {
             $("#navarea").removeClass("scroll");
             $("#back_to_top").hide("fade", 300);
-        };
+        }
 
         var homeHeight = $("#home").outerHeight();
         if ($(this).scrollTop() > homeHeight) {
             $("#IntroZone").addClass("invisible");
         } else {
             $("#IntroZone").removeClass("invisible");
-        };
+        }
     });
 
-    /* 回到頂端動畫 */
+    // 回到頂端動畫
     $("#back_to_top").click(function (e) {
         e.preventDefault;
         $("html,body").animate({
@@ -26,7 +26,7 @@ $(document).ready(function () {
         }, 500);
     });
 
-    /* 平滑轉跳 */
+    // 平滑轉跳
     $(".smooth_hash").click(function (e) {
         e.preventDefault;
         var navHeight = $(".navbar_list").outerHeight();
@@ -36,7 +36,17 @@ $(document).ready(function () {
         }, 500);
     });
 
-    /* 經歷單一展開 */
+    // 按鈕啟動換色
+    $(".experience_card_collapse").click(function () {
+        $(this).addClass("active");
+        var collapseButtonTarget = $(this).data("target");
+        $(collapseButtonTarget).on("hidden.bs.collapse", function () {
+            var btnActive = $(".experience_card_collapse").filter(".collapsed");
+            $(btnActive).removeClass("active");
+        });
+    });
+
+    // 經歷單一展開
     $("#experience").bind("show.bs.collapse collapse", function () {
         $(this).find(".collapse.show").collapse('hide');
     });
