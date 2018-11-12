@@ -236,6 +236,12 @@ strong {
     color: white;
 }
 
+.navbar_item a:hover,
+.navbar_item a:active {
+    color: #ffd800;
+    text-decoration: none;
+}
+
 @media only screen and (max-width:767.98px) {
 
     #navarea {
@@ -743,7 +749,8 @@ strong {
 }
 
 .non_stytle,
-.non_stytle:hover {
+.non_stytle:hover,
+.non_stytle:active {
     color: white;
     text-decoration: none;
     word-break: break-all;
