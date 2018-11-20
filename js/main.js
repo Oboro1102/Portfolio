@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     // 導覽列滑動Fixed
     $(window).bind("scroll load", function () {
-
         if ($(this).scrollTop() > 0) {
             $("#navarea").addClass("scroll");
             $("#back_to_top").show("fade", 300);
