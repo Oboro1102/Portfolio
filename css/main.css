@@ -677,11 +677,12 @@ strong {
     margin-top: 2rem;
     border-radius: 10px;
     background: white;
-    margin-right: 1.5rem;
+    margin-right: auto;
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .2);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, .2);
 }
 
+.web_collection_card:nth-child(3n+0),
 .web_collection_card:last-child {
     margin-right: 0;
 }
@@ -709,7 +710,14 @@ strong {
 
     .web_collection_card {
         width: 48%;
+    }
+
+    .web_collection_card:nth-child(3n+0) {
         margin-right: auto;
+    }
+
+    .web_collection_card:nth-child(2n+0) {
+        margin-right: 0;
     }
 
 }
