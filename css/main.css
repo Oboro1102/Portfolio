@@ -448,21 +448,28 @@ strong {
     margin-left: 1rem;
 }
 
-@-webkit-keyframes bargrown {
-    0% {
-        width: 0
-    }
+[data-aos="bargrown-40"],
+[data-aos="bargrown-85"],
+[data-aos="bargrown-90"],
+[data-aos="bargrown-95"] {
+    width: 0;
+    transition: all 1s;
 }
 
-@keyframes bargrown {
-    0% {
-        width: 0
-    }
+[data-aos="bargrown-40"].aos-animate {
+    width: 40%;
 }
 
-.bargrown {
-    -webkit-animation-name: bargrown;
-    animation-name: bargrown;
+[data-aos="bargrown-85"].aos-animate {
+    width: 85%;
+}
+
+[data-aos="bargrown-90"].aos-animate {
+    width: 90%;
+}
+
+[data-aos="bargrown-95"].aos-animate {
+    width: 95%;
 }
 
 .skillcard {
