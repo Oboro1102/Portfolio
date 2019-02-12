@@ -612,7 +612,7 @@ strong {
     margin-right: 0;
 }
 
-.experience_card time {
+.experience_card span {
     font-family: 'Audiowide', cursive;
     opacity: .75;
     font-size: 1.45rem;
@@ -633,7 +633,7 @@ strong {
         margin-right: 0;
     }
 
-    .experience_card time {
+    .experience_card span {
         font-size: 1.2rem;
     }
 
@@ -646,7 +646,7 @@ strong {
         margin-right: 0;
     }
 
-    .experience_card time {
+    .experience_card span {
         font-size: 1.4rem;
     }
 }
